@@ -1,5 +1,4 @@
 # datacom-automation
-
 # Datacom Bugs Form Automation Framework  This project automates testing of the Datacom Bugs Form using ** Java + Playwright + TestNG + ExtentReports**.   It validates input fields, dropdowns, and form behavior against expected rules.
 
 STRATEGY (checkpoints)
@@ -69,6 +68,5 @@ BUGS
      - Cook Islands
      - Wallis & Futana Is
      - Zaire
-
 
 
