@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [PlaywrightSuite]" guice-stage="DEVELOPMENT">
+  <parameter name="browserName" value="chromium"/>
+  <listeners>
+    <listener class-name="com.datacom.framework.reports.TestListener"/>
+  </listeners>
+  <test thread-count="5" parallel="classes" name="Smoke Testing Suite(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.DatacomBugsFormTestEmail">
+        <methods>
+          <include name="testValidInputEmail" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="testInvalidInputEmail" invocation-numbers="0"/>
+          <include name="setupTestObjects"/>
+          <include name="testEmptyInputEmail" invocation-numbers="0"/>
+          <include name="tearDownSuite"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.DatacomBugsFormTestEmail -->
+      <class name="tests.DatacomBugsFormTestName">
+        <methods>
+          <include name="testEmptyInputFirstName" invocation-numbers="0"/>
+          <include name="testValidInputLastName" invocation-numbers="0"/>
+          <include name="testValidInputFirstName" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setupPages"/>
+          <include name="testInvalidInputFirstName" invocation-numbers="0"/>
+          <include name="testInvalidInputLastName" invocation-numbers="0"/>
+          <include name="tearDownSuite"/>
+          <include name="setUp"/>
+          <include name="testEmptyInputLastName" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- tests.DatacomBugsFormTestName -->
+      <class name="tests.DatacomBugsFormTestCountry">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testCountryDropdownOptions"/>
+          <include name="tearDownSuite"/>
+          <include name="setUp"/>
+          <include name="setupPages"/>
+        </methods>
+      </class> <!-- tests.DatacomBugsFormTestCountry -->
+      <class name="tests.DatacomBugsFormTestPhoneNumber">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testValidInputPhone" invocation-numbers="0"/>
+          <include name="testLessMinimumInputPhone" invocation-numbers="0"/>
+          <include name="tearDownSuite"/>
+          <include name="setupTestObjects"/>
+          <include name="setUp"/>
+          <include name="testEmptyInputPhone" invocation-numbers="0"/>
+          <include name="testInvalidInputPhone" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- tests.DatacomBugsFormTestPhoneNumber -->
+      <class name="tests.DatacomBugsFormTestPassword">
+        <methods>
+          <include name="setupTestObjects"/>
+          <include name="tearDown"/>
+          <include name="tearDownSuite"/>
+          <include name="setUp"/>
+          <include name="testValidInputPassword" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- tests.DatacomBugsFormTestPassword -->
+    </classes>
+  </test> <!-- Smoke Testing Suite(failed) -->
+</suite> <!-- Failed suite [PlaywrightSuite] -->

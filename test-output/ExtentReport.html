@@ -1,0 +1,3274 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Automation Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Datacom Test Results</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Sep 27, 2025 07:37:33 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testEmptyInputPassword</p>
+            <p class="text-sm">
+              <span>7:37:46 PM</span> / <span>00:00:04:843</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testEmptyInputPassword</h5>
+<span class='badge badge-success'>09.27.2025 7:37:46 PM</span>
+<span class='badge badge-danger'>09.27.2025 7:37:50 PM</span>
+<span class='badge badge-default'>00:00:04:843</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          1. Navigating to Datacom Bugs-Form
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:50 PM</td>
+        <td>
+          2. Filling-up the fields<br><a href='screenshots/testEmptyInputPassword.png' target='_blank'><img src='screenshots/testEmptyInputPassword.png' style='width:100px; height:100px; object-fit:cover;'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:50 PM</td>
+        <td>
+          3. Click register
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:50 PM</td>
+        <td>
+          4. Verify registration message<br><a href='screenshots/RegistrationMsg_testEmptyInputPassword.png' target='_blank'><img src='screenshots/RegistrationMsg_testEmptyInputPassword.png' style='width:100px; height:100px; object-fit:cover;'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:37:50 PM</td>
+        <td>
+          Registration Message:  <span style='color:green;'>PASSED! Expected to contain: 'The password should contain between [6,20] characters!' | Actual: 'The password should contain between [6,20] characters!'</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:37:50 PM</td>
+        <td>
+           <span style='color:green;'> ✅ PASSED 
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testEmptyInputFirstName</p>
+            <p class="text-sm">
+              <span>7:37:46 PM</span> / <span>00:00:05:708</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testEmptyInputFirstName</h5>
+<span class='badge badge-success'>09.27.2025 7:37:46 PM</span>
+<span class='badge badge-danger'>09.27.2025 7:37:52 PM</span>
+<span class='badge badge-default'>00:00:05:708</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:48 PM</td>
+        <td>
+          1. Navigating to Datacom Bugs-Form
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:51 PM</td>
+        <td>
+          2. Filling-up the fields<br><a href='screenshots/testEmptyInputFirstName.png' target='_blank'><img src='screenshots/testEmptyInputFirstName.png' style='width:100px; height:100px; object-fit:cover;'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:51 PM</td>
+        <td>
+          3. Click register
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:51 PM</td>
+        <td>
+          4. Verify registration message<br><a href='screenshots/Registration Message_ testEmptyInputFirstName.png' target='_blank'><img src='screenshots/Registration Message_ testEmptyInputFirstName.png' style='width:100px; height:100px; object-fit:cover;'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:37:51 PM</td>
+        <td>
+          Registration Message:  <span style='color:green;'>PASSED! Expected to contain: 'Successfully registered' | Actual: 'Successfully registered the following information'</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:37:51 PM</td>
+        <td>
+          Registered First Name:  <span style='color:green;'>PASSED! Expected:  | Actual: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:37:52 PM</td>
+        <td>
+          Registered Last Name:  <span style='color:red;'>FAILED! Expected: Monkey | Actual: Monke</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:37:52 PM</td>
+        <td>
+          Registered Phone Number:  <span style='color:red;'>FAILED! Expected: 1234567890 | Actual: 1234567891</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:37:52 PM</td>
+        <td>
+          Registered Email:  <span style='color:green;'>PASSED! Expected: luffy@op.com | Actual: luffy@op.com</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:37:52 PM</td>
+        <td>
+           <span style='color:green;'>❌ FAILED 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:37:52 PM</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: The following asserts failed:
+	expected [Monkey] but found [Monke],
+	expected [1234567890] but found [1234567891]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.DatacomBugsFormTestName.runFirstNameTest(DatacomBugsFormTestName.java:83)
+	at tests.DatacomBugsFormTestName.testEmptyInputFirstName(DatacomBugsFormTestName.java:44)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testCountryDropdownOptions</p>
+            <p class="text-sm">
+              <span>7:37:46 PM</span> / <span>00:00:03:305</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testCountryDropdownOptions</h5>
+<span class='badge badge-success'>09.27.2025 7:37:46 PM</span>
+<span class='badge badge-danger'>09.27.2025 7:37:49 PM</span>
+<span class='badge badge-default'>00:00:03:305</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:48 PM</td>
+        <td>
+          1. Navigated to Datacom Bugs-Form
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          2. Extracted 246 country options<br><a href='screenshots/DropdownOptions.png' target='_blank'><img src='screenshots/DropdownOptions.png' style='width:100px; height:100px; object-fit:cover;'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          3. Loaded 195 expected countries from Excel.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          4. Invalid country in dropdown: American Samoa
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          5. Invalid country in dropdown: Anguilla
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          6. Invalid country in dropdown: Antigua & Barbuda
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          7. Invalid country in dropdown: Aruba
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          8. Invalid country in dropdown: Bermuda
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          9. Invalid country in dropdown: Bonaire
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          10. Invalid country in dropdown: Bosnia & Herzegovina
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          11. Invalid country in dropdown: British Indian Ocean Ter
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          12. Invalid country in dropdown: Canary Islands
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          13. Invalid country in dropdown: Cape Verde
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          14. Invalid country in dropdown: Cayman Islands
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          15. Invalid country in dropdown: Channel Islands
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          16. Invalid country in dropdown: Christmas Island
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          17. Invalid country in dropdown: Cocos Island
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          18. Invalid country in dropdown: Congo
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          19. Invalid country in dropdown: Cook Islands
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          20. Invalid country in dropdown: Cote DIvoire
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          21. Invalid country in dropdown: Curacao
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          22. Invalid country in dropdown: Czech Republic
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          23. Invalid country in dropdown: East Timor
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          24. Invalid country in dropdown: Falkland Islands
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          25. Invalid country in dropdown: Faroe Islands
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          26. Invalid country in dropdown: French Guiana
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          27. Invalid country in dropdown: French Polynesia
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          28. Invalid country in dropdown: French Southern Ter
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          29. Invalid country in dropdown: Gibraltar
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          30. Invalid country in dropdown: Great Britain
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          31. Invalid country in dropdown: Greenland
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          32. Invalid country in dropdown: Guadeloupe
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          33. Invalid country in dropdown: Guam
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          34. Invalid country in dropdown: Hawaii
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          35. Invalid country in dropdown: Hong Kong
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          36. Invalid country in dropdown: Isle of Man
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          37. Invalid country in dropdown: Korea North
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          38. Invalid country in dropdown: Korea South
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          39. Invalid country in dropdown: Macau
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          40. Invalid country in dropdown: Macedonia
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          41. Invalid country in dropdown: Martinique
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          42. Invalid country in dropdown: Mayotte
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          43. Invalid country in dropdown: Midway Islands
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          44. Invalid country in dropdown: Montserrat
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          45. Invalid country in dropdown: Myanmar
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          46. Invalid country in dropdown: Nambia
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          47. Invalid country in dropdown: Netherland Antilles
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          48. Invalid country in dropdown: Netherlands (Holland, Europe)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          49. Invalid country in dropdown: Nevis
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          50. Invalid country in dropdown: New Caledonia
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          51. Invalid country in dropdown: Niue
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          52. Invalid country in dropdown: Norfolk Island
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          53. Invalid country in dropdown: Palau Island
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          54. Invalid country in dropdown: Palestine
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          55. Invalid country in dropdown: Pitcairn Island
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          56. Invalid country in dropdown: Puerto Rico
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          57. Invalid country in dropdown: Republic of Montenegro
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          58. Invalid country in dropdown: Republic of Serbia
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          59. Invalid country in dropdown: Reunion
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          60. Invalid country in dropdown: St Barthelemy
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          61. Invalid country in dropdown: St Eustatius
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          62. Invalid country in dropdown: St Helena
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          63. Invalid country in dropdown: St Kitts-Nevis
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          64. Invalid country in dropdown: St Lucia
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          65. Invalid country in dropdown: St Maarten
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          66. Invalid country in dropdown: St Pierre & Miquelon
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          67. Invalid country in dropdown: St Vincent & Grenadines
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          68. Invalid country in dropdown: Saipan
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          69. Invalid country in dropdown: Samoa American
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          70. Invalid country in dropdown: Sao Tome & Principe
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          71. Invalid country in dropdown: Swaziland
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          72. Invalid country in dropdown: Tahiti
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          73. Invalid country in dropdown: Taiwan
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          74. Invalid country in dropdown: Tokelau
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          75. Invalid country in dropdown: Trinidad & Tobago
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          76. Invalid country in dropdown: Turks & Caicos Is
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          77. Invalid country in dropdown: Vatican City State
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          78. Invalid country in dropdown: Virgin Islands (Brit)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          79. Invalid country in dropdown: Virgin Islands (USA)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          80. Invalid country in dropdown: Wake Island
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          81. Invalid country in dropdown: Wallis & Futana Is
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          82. Invalid country in dropdown: Zaire
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          83. <span style='color:yellow;'> Missing expected country: Antigua and Barbuda
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          84. <span style='color:yellow;'> Missing expected country: Bosnia and Herzegovina
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          85. <span style='color:yellow;'> Missing expected country: Cabo Verde
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          86. <span style='color:yellow;'> Missing expected country: Congo (Congo-Brazzaville)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          87. <span style='color:yellow;'> Missing expected country: Côte d'Ivoire
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          88. <span style='color:yellow;'> Missing expected country: Czechia (Czech Republic)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          89. <span style='color:yellow;'> Missing expected country: Democratic Republic of the Congo
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          90. <span style='color:yellow;'> Missing expected country: Eswatini (fmr. ""Swaziland"")
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          91. <span style='color:yellow;'> Missing expected country: Guinea-Bissau
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          92. <span style='color:yellow;'> Missing expected country: Holy See
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          93. <span style='color:yellow;'> Missing expected country: Micronesia
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          94. <span style='color:yellow;'> Missing expected country: Montenegro
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          95. <span style='color:yellow;'> Missing expected country: Myanmar (formerly Burma)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          96. <span style='color:yellow;'> Missing expected country: Namibia
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          97. <span style='color:yellow;'> Missing expected country: Netherlands
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          98. <span style='color:yellow;'> Missing expected country: North Korea
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          99. <span style='color:yellow;'> Missing expected country: North Macedonia
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          100. <span style='color:yellow;'> Missing expected country: Palau
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          101. <span style='color:yellow;'> Missing expected country: Palestine State
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          102. <span style='color:yellow;'> Missing expected country: Saint Kitts and Nevis
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          103. <span style='color:yellow;'> Missing expected country: Saint Lucia
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          104. <span style='color:yellow;'> Missing expected country: Saint Vincent and the Grenadines
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          105. <span style='color:yellow;'> Missing expected country: Sao Tome and Principe
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          106. <span style='color:yellow;'> Missing expected country: Serbia
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          107. <span style='color:yellow;'> Missing expected country: South Korea
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          108. <span style='color:yellow;'> Missing expected country: South Sudan
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          109. <span style='color:yellow;'> Missing expected country: Timor-Leste
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          110. <span style='color:yellow;'> Missing expected country: Trinidad and Tobago
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+           <span style='color:green;'>❌ FAILED 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: The following asserts failed:
+	<span style='color:red;'> Invalid country: American Samoa,
+	<span style='color:red;'> Invalid country: Anguilla,
+	<span style='color:red;'> Invalid country: Antigua & Barbuda,
+	<span style='color:red;'> Invalid country: Aruba,
+	<span style='color:red;'> Invalid country: Bermuda,
+	<span style='color:red;'> Invalid country: Bonaire,
+	<span style='color:red;'> Invalid country: Bosnia & Herzegovina,
+	<span style='color:red;'> Invalid country: British Indian Ocean Ter,
+	<span style='color:red;'> Invalid country: Canary Islands,
+	<span style='color:red;'> Invalid country: Cape Verde,
+	<span style='color:red;'> Invalid country: Cayman Islands,
+	<span style='color:red;'> Invalid country: Channel Islands,
+	<span style='color:red;'> Invalid country: Christmas Island,
+	<span style='color:red;'> Invalid country: Cocos Island,
+	<span style='color:red;'> Invalid country: Congo,
+	<span style='color:red;'> Invalid country: Cook Islands,
+	<span style='color:red;'> Invalid country: Cote DIvoire,
+	<span style='color:red;'> Invalid country: Curacao,
+	<span style='color:red;'> Invalid country: Czech Republic,
+	<span style='color:red;'> Invalid country: East Timor,
+	<span style='color:red;'> Invalid country: Falkland Islands,
+	<span style='color:red;'> Invalid country: Faroe Islands,
+	<span style='color:red;'> Invalid country: French Guiana,
+	<span style='color:red;'> Invalid country: French Polynesia,
+	<span style='color:red;'> Invalid country: French Southern Ter,
+	<span style='color:red;'> Invalid country: Gibraltar,
+	<span style='color:red;'> Invalid country: Great Britain,
+	<span style='color:red;'> Invalid country: Greenland,
+	<span style='color:red;'> Invalid country: Guadeloupe,
+	<span style='color:red;'> Invalid country: Guam,
+	<span style='color:red;'> Invalid country: Hawaii,
+	<span style='color:red;'> Invalid country: Hong Kong,
+	<span style='color:red;'> Invalid country: Isle of Man,
+	<span style='color:red;'> Invalid country: Korea North,
+	<span style='color:red;'> Invalid country: Korea South,
+	<span style='color:red;'> Invalid country: Macau,
+	<span style='color:red;'> Invalid country: Macedonia,
+	<span style='color:red;'> Invalid country: Martinique,
+	<span style='color:red;'> Invalid country: Mayotte,
+	<span style='color:red;'> Invalid country: Midway Islands,
+	<span style='color:red;'> Invalid country: Montserrat,
+	<span style='color:red;'> Invalid country: Myanmar,
+	<span style='color:red;'> Invalid country: Nambia,
+	<span style='color:red;'> Invalid country: Netherland Antilles,
+	<span style='color:red;'> Invalid country: Netherlands (Holland, Europe),
+	<span style='color:red;'> Invalid country: Nevis,
+	<span style='color:red;'> Invalid country: New Caledonia,
+	<span style='color:red;'> Invalid country: Niue,
+	<span style='color:red;'> Invalid country: Norfolk Island,
+	<span style='color:red;'> Invalid country: Palau Island,
+	<span style='color:red;'> Invalid country: Palestine,
+	<span style='color:red;'> Invalid country: Pitcairn Island,
+	<span style='color:red;'> Invalid country: Puerto Rico,
+	<span style='color:red;'> Invalid country: Republic of Montenegro,
+	<span style='color:red;'> Invalid country: Republic of Serbia,
+	<span style='color:red;'> Invalid country: Reunion,
+	<span style='color:red;'> Invalid country: St Barthelemy,
+	<span style='color:red;'> Invalid country: St Eustatius,
+	<span style='color:red;'> Invalid country: St Helena,
+	<span style='color:red;'> Invalid country: St Kitts-Nevis,
+	<span style='color:red;'> Invalid country: St Lucia,
+	<span style='color:red;'> Invalid country: St Maarten,
+	<span style='color:red;'> Invalid country: St Pierre & Miquelon,
+	<span style='color:red;'> Invalid country: St Vincent & Grenadines,
+	<span style='color:red;'> Invalid country: Saipan,
+	<span style='color:red;'> Invalid country: Samoa American,
+	<span style='color:red;'> Invalid country: Sao Tome & Principe,
+	<span style='color:red;'> Invalid country: Swaziland,
+	<span style='color:red;'> Invalid country: Tahiti,
+	<span style='color:red;'> Invalid country: Taiwan,
+	<span style='color:red;'> Invalid country: Tokelau,
+	<span style='color:red;'> Invalid country: Trinidad & Tobago,
+	<span style='color:red;'> Invalid country: Turks & Caicos Is,
+	<span style='color:red;'> Invalid country: Vatican City State,
+	<span style='color:red;'> Invalid country: Virgin Islands (Brit),
+	<span style='color:red;'> Invalid country: Virgin Islands (USA),
+	<span style='color:red;'> Invalid country: Wake Island,
+	<span style='color:red;'> Invalid country: Wallis & Futana Is,
+	<span style='color:red;'> Invalid country: Zaire,
+	Missing country: Antigua and Barbuda,
+	Missing country: Bosnia and Herzegovina,
+	Missing country: Cabo Verde,
+	Missing country: Congo (Congo-Brazzaville),
+	Missing country: Côte d'Ivoire,
+	Missing country: Czechia (Czech Republic),
+	Missing country: Democratic Republic of the Congo,
+	Missing country: Eswatini (fmr. ""Swaziland""),
+	Missing country: Guinea-Bissau,
+	Missing country: Holy See,
+	Missing country: Micronesia,
+	Missing country: Montenegro,
+	Missing country: Myanmar (formerly Burma),
+	Missing country: Namibia,
+	Missing country: Netherlands,
+	Missing country: North Korea,
+	Missing country: North Macedonia,
+	Missing country: Palau,
+	Missing country: Palestine State,
+	Missing country: Saint Kitts and Nevis,
+	Missing country: Saint Lucia,
+	Missing country: Saint Vincent and the Grenadines,
+	Missing country: Sao Tome and Principe,
+	Missing country: Serbia,
+	Missing country: South Korea,
+	Missing country: South Sudan,
+	Missing country: Timor-Leste,
+	Missing country: Trinidad and Tobago
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.DatacomBugsFormTestCountry.testCountryDropdownOptions(DatacomBugsFormTestCountry.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testEmptyInputEmail</p>
+            <p class="text-sm">
+              <span>7:37:46 PM</span> / <span>00:00:04:299</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testEmptyInputEmail</h5>
+<span class='badge badge-success'>09.27.2025 7:37:46 PM</span>
+<span class='badge badge-danger'>09.27.2025 7:37:51 PM</span>
+<span class='badge badge-default'>00:00:04:299</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          1. Navigating to Datacom Bugs-Form
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:50 PM</td>
+        <td>
+          2. Filling-up the fields<br><a href='screenshots/testEmptyInputEmail.png' target='_blank'><img src='screenshots/testEmptyInputEmail.png' style='width:100px; height:100px; object-fit:cover;'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:50 PM</td>
+        <td>
+          3. Click register
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:51 PM</td>
+        <td>
+          4. Verify registration message<br><a href='screenshots/RegistrationMsg_testEmptyInputEmail.png' target='_blank'><img src='screenshots/RegistrationMsg_testEmptyInputEmail.png' style='width:100px; height:100px; object-fit:cover;'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:37:51 PM</td>
+        <td>
+          Registration Message:  <span style='color:red;'>FAILED! Expected to contain: 'Unsuccessful  - Email field should not be empty since its marked as mandatory field(*) ' | Actual: 'Successfully registered the following information'</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:37:51 PM</td>
+        <td>
+          Registered Last Name:  <span style='color:red;'>FAILED! Expected: Monkey | Actual: Monke</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:37:51 PM</td>
+        <td>
+          Registered Phone Number:  <span style='color:red;'>FAILED! Expected: 1234567890 | Actual: 1234567891</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:37:51 PM</td>
+        <td>
+          Registered Email:  <span style='color:green;'>PASSED! Expected:  | Actual: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:37:51 PM</td>
+        <td>
+           <span style='color:green;'>❌ FAILED 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:37:51 PM</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: The following asserts failed:
+	Expected actual to contain: Unsuccessful  - Email field should not be empty since its marked as mandatory field(*)  but was: Successfully registered the following information expected [true] but found [false],
+	expected [Monkey] but found [Monke],
+	expected [1234567890] but found [1234567891]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.DatacomBugsFormTestEmail.runEmailTest(DatacomBugsFormTestEmail.java:66)
+	at tests.DatacomBugsFormTestEmail.testEmptyInputEmail(DatacomBugsFormTestEmail.java:44)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testEmptyInputPhone</p>
+            <p class="text-sm">
+              <span>7:37:46 PM</span> / <span>00:00:04:029</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testEmptyInputPhone</h5>
+<span class='badge badge-success'>09.27.2025 7:37:46 PM</span>
+<span class='badge badge-danger'>09.27.2025 7:37:50 PM</span>
+<span class='badge badge-default'>00:00:04:029</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:49 PM</td>
+        <td>
+          1. Navigating to Datacom Bugs-Form
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:50 PM</td>
+        <td>
+          2. Filling-up the fields<br><a href='screenshots/testEmptyInputPhone.png' target='_blank'><img src='screenshots/testEmptyInputPhone.png' style='width:100px; height:100px; object-fit:cover;'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:50 PM</td>
+        <td>
+          3. Click register
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:50 PM</td>
+        <td>
+          4. Verify registration message<br><a href='screenshots/RegistrationMsg_testEmptyInputPhone.png' target='_blank'><img src='screenshots/RegistrationMsg_testEmptyInputPhone.png' style='width:100px; height:100px; object-fit:cover;'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:37:50 PM</td>
+        <td>
+          Registration Message:  <span style='color:green;'>PASSED! Expected to contain: 'The phone number should contain at least 10 characters!' | Actual: 'The phone number should contain at least 10 characters!'</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:37:50 PM</td>
+        <td>
+          Registered Last Name:  <span style='color:red;'>FAILED! Expected: Monkey | Actual: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:37:50 PM</td>
+        <td>
+          Registered Phone Number:  <span style='color:green;'>PASSED! Expected:  | Actual: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:37:50 PM</td>
+        <td>
+          Registered Email:  <span style='color:red;'>FAILED! Expected: luffy@op.com | Actual: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:37:50 PM</td>
+        <td>
+           <span style='color:green;'>❌ FAILED 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:37:50 PM</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: The following asserts failed:
+	expected [Monkey] but found [],
+	expected [luffy@op.com] but found []
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.DatacomBugsFormTestPhoneNumber.runPhoneTest(DatacomBugsFormTestPhoneNumber.java:70)
+	at tests.DatacomBugsFormTestPhoneNumber.testEmptyInputPhone(DatacomBugsFormTestPhoneNumber.java:48)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testInvalidInputEmail</p>
+            <p class="text-sm">
+              <span>7:37:55 PM</span> / <span>00:00:03:931</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testInvalidInputEmail</h5>
+<span class='badge badge-success'>09.27.2025 7:37:55 PM</span>
+<span class='badge badge-danger'>09.27.2025 7:37:58 PM</span>
+<span class='badge badge-default'>00:00:03:931</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:57 PM</td>
+        <td>
+          1. Navigating to Datacom Bugs-Form
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:58 PM</td>
+        <td>
+          2. Filling-up the fields<br><a href='screenshots/testInvalidInputEmail.png' target='_blank'><img src='screenshots/testInvalidInputEmail.png' style='width:100px; height:100px; object-fit:cover;'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:58 PM</td>
+        <td>
+          3. Click register
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:58 PM</td>
+        <td>
+          4. Verify registration message<br><a href='screenshots/RegistrationMsg_testInvalidInputEmail.png' target='_blank'><img src='screenshots/RegistrationMsg_testInvalidInputEmail.png' style='width:100px; height:100px; object-fit:cover;'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:37:58 PM</td>
+        <td>
+          Registration Message:  <span style='color:red;'>FAILED! Expected to contain: 'Unsuccessful  - Email field should only accept input value with @ and '.' format ' | Actual: 'Successfully registered the following information'</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:37:58 PM</td>
+        <td>
+          Registered Last Name:  <span style='color:red;'>FAILED! Expected: Monkey | Actual: Monke</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:37:58 PM</td>
+        <td>
+          Registered Phone Number:  <span style='color:red;'>FAILED! Expected: 1234567890 | Actual: 1234567891</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:37:58 PM</td>
+        <td>
+          Registered Email:  <span style='color:green;'>PASSED! Expected: luffy123!#$ | Actual: luffy123!#$</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:37:58 PM</td>
+        <td>
+           <span style='color:green;'>❌ FAILED 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:37:58 PM</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: The following asserts failed:
+	Expected actual to contain: Unsuccessful  - Email field should only accept input value with @ and '.' format  but was: Successfully registered the following information expected [true] but found [false],
+	expected [Monkey] but found [Monke],
+	expected [1234567890] but found [1234567891]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.DatacomBugsFormTestEmail.runEmailTest(DatacomBugsFormTestEmail.java:66)
+	at tests.DatacomBugsFormTestEmail.testInvalidInputEmail(DatacomBugsFormTestEmail.java:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testInvalidInputPhone</p>
+            <p class="text-sm">
+              <span>7:37:55 PM</span> / <span>00:00:03:443</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testInvalidInputPhone</h5>
+<span class='badge badge-success'>09.27.2025 7:37:55 PM</span>
+<span class='badge badge-danger'>09.27.2025 7:37:58 PM</span>
+<span class='badge badge-default'>00:00:03:443</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:57 PM</td>
+        <td>
+          1. Navigating to Datacom Bugs-Form
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:58 PM</td>
+        <td>
+          2. Filling-up the fields<br><a href='screenshots/testInvalidInputPhone.png' target='_blank'><img src='screenshots/testInvalidInputPhone.png' style='width:100px; height:100px; object-fit:cover;'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:58 PM</td>
+        <td>
+          3. Click register
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:58 PM</td>
+        <td>
+          4. Verify registration message<br><a href='screenshots/RegistrationMsg_testInvalidInputPhone.png' target='_blank'><img src='screenshots/RegistrationMsg_testInvalidInputPhone.png' style='width:100px; height:100px; object-fit:cover;'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:37:58 PM</td>
+        <td>
+          Registration Message:  <span style='color:red;'>FAILED! Expected to contain: 'Unsuccessful - Phone Number field should only accept numeric values ' | Actual: 'Successfully registered the following information'</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:37:58 PM</td>
+        <td>
+          Registered Last Name:  <span style='color:red;'>FAILED! Expected: Monkey | Actual: Monke</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:37:58 PM</td>
+        <td>
+          Registered Phone Number:  <span style='color:red;'>FAILED! Expected: QWERTY!@#$% | Actual: QWERTY!@#$NaN</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:37:58 PM</td>
+        <td>
+          Registered Email:  <span style='color:green;'>PASSED! Expected: luffy@op.com | Actual: luffy@op.com</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:37:58 PM</td>
+        <td>
+           <span style='color:green;'>❌ FAILED 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:37:58 PM</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: The following asserts failed:
+	Expected actual to contain: Unsuccessful - Phone Number field should only accept numeric values  but was: Successfully registered the following information expected [true] but found [false],
+	expected [Monkey] but found [Monke],
+	expected [QWERTY!@#$%] but found [QWERTY!@#$NaN]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.DatacomBugsFormTestPhoneNumber.runPhoneTest(DatacomBugsFormTestPhoneNumber.java:70)
+	at tests.DatacomBugsFormTestPhoneNumber.testInvalidInputPhone(DatacomBugsFormTestPhoneNumber.java:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testLessMinimumInputPassword</p>
+            <p class="text-sm">
+              <span>7:37:55 PM</span> / <span>00:00:03:603</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testLessMinimumInputPassword</h5>
+<span class='badge badge-success'>09.27.2025 7:37:55 PM</span>
+<span class='badge badge-danger'>09.27.2025 7:37:58 PM</span>
+<span class='badge badge-default'>00:00:03:603</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:57 PM</td>
+        <td>
+          1. Navigating to Datacom Bugs-Form
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:58 PM</td>
+        <td>
+          2. Filling-up the fields<br><a href='screenshots/testLessMinimumInputPassword.png' target='_blank'><img src='screenshots/testLessMinimumInputPassword.png' style='width:100px; height:100px; object-fit:cover;'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:58 PM</td>
+        <td>
+          3. Click register
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:58 PM</td>
+        <td>
+          4. Verify registration message<br><a href='screenshots/RegistrationMsg_testLessMinimumInputPassword.png' target='_blank'><img src='screenshots/RegistrationMsg_testLessMinimumInputPassword.png' style='width:100px; height:100px; object-fit:cover;'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:37:58 PM</td>
+        <td>
+          Registration Message:  <span style='color:green;'>PASSED! Expected to contain: 'The password should contain between [6,20] characters!' | Actual: 'The password should contain between [6,20] characters!'</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:37:58 PM</td>
+        <td>
+           <span style='color:green;'> ✅ PASSED 
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="9"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testEmptyInputLastName</p>
+            <p class="text-sm">
+              <span>7:37:56 PM</span> / <span>00:00:03:414</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testEmptyInputLastName</h5>
+<span class='badge badge-success'>09.27.2025 7:37:56 PM</span>
+<span class='badge badge-danger'>09.27.2025 7:37:59 PM</span>
+<span class='badge badge-default'>00:00:03:414</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:58 PM</td>
+        <td>
+          1. Navigating to Datacom Bugs-Form
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:59 PM</td>
+        <td>
+          2. Filling-up the fields<br><a href='screenshots/testEmptyInputLastName.png' target='_blank'><img src='screenshots/testEmptyInputLastName.png' style='width:100px; height:100px; object-fit:cover;'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:59 PM</td>
+        <td>
+          3. Click register
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:37:59 PM</td>
+        <td>
+          4. Verify registration message<br><a href='screenshots/Registration Message_ testEmptyInputLastName.png' target='_blank'><img src='screenshots/Registration Message_ testEmptyInputLastName.png' style='width:100px; height:100px; object-fit:cover;'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:37:59 PM</td>
+        <td>
+          Registration Message:  <span style='color:red;'>FAILED! Expected to contain: 'Unsuccessful' | Actual: 'Successfully registered the following information'</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:37:59 PM</td>
+        <td>
+          Registered Last Name:  <span style='color:green;'>PASSED! Expected:  | Actual: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:37:59 PM</td>
+        <td>
+          Registered Phone Number:  <span style='color:red;'>FAILED! Expected: 1234567890 | Actual: 1234567891</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:37:59 PM</td>
+        <td>
+          Registered Email:  <span style='color:green;'>PASSED! Expected: luffy@op.com | Actual: luffy@op.com</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:37:59 PM</td>
+        <td>
+           <span style='color:green;'>❌ FAILED 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:37:59 PM</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: The following asserts failed:
+	Expected actual to contain: Unsuccessful but was: Successfully registered the following information expected [true] but found [false],
+	expected [1234567890] but found [1234567891]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.DatacomBugsFormTestName.runLastNameTest(DatacomBugsFormTestName.java:106)
+	at tests.DatacomBugsFormTestName.testEmptyInputLastName(DatacomBugsFormTestName.java:59)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testMoreThanMaxInputPassword</p>
+            <p class="text-sm">
+              <span>7:38:02 PM</span> / <span>00:00:04:659</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testMoreThanMaxInputPassword</h5>
+<span class='badge badge-success'>09.27.2025 7:38:02 PM</span>
+<span class='badge badge-danger'>09.27.2025 7:38:06 PM</span>
+<span class='badge badge-default'>00:00:04:659</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:05 PM</td>
+        <td>
+          1. Navigating to Datacom Bugs-Form
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:06 PM</td>
+        <td>
+          2. Filling-up the fields<br><a href='screenshots/testMoreThanMaxInputPassword.png' target='_blank'><img src='screenshots/testMoreThanMaxInputPassword.png' style='width:100px; height:100px; object-fit:cover;'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:06 PM</td>
+        <td>
+          3. Click register
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:06 PM</td>
+        <td>
+          4. Verify registration message<br><a href='screenshots/RegistrationMsg_testMoreThanMaxInputPassword.png' target='_blank'><img src='screenshots/RegistrationMsg_testMoreThanMaxInputPassword.png' style='width:100px; height:100px; object-fit:cover;'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:38:06 PM</td>
+        <td>
+          Registration Message:  <span style='color:green;'>PASSED! Expected to contain: 'The password should contain between [6,20] characters!' | Actual: 'The password should contain between [6,20] characters!'</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:38:06 PM</td>
+        <td>
+           <span style='color:green;'> ✅ PASSED 
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="11"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testValidInputEmail</p>
+            <p class="text-sm">
+              <span>7:38:02 PM</span> / <span>00:00:03:320</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testValidInputEmail</h5>
+<span class='badge badge-success'>09.27.2025 7:38:02 PM</span>
+<span class='badge badge-danger'>09.27.2025 7:38:05 PM</span>
+<span class='badge badge-default'>00:00:03:320</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:04 PM</td>
+        <td>
+          1. Navigating to Datacom Bugs-Form
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:05 PM</td>
+        <td>
+          2. Filling-up the fields<br><a href='screenshots/testValidInputEmail.png' target='_blank'><img src='screenshots/testValidInputEmail.png' style='width:100px; height:100px; object-fit:cover;'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:05 PM</td>
+        <td>
+          3. Click register
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:05 PM</td>
+        <td>
+          4. Verify registration message<br><a href='screenshots/RegistrationMsg_testValidInputEmail.png' target='_blank'><img src='screenshots/RegistrationMsg_testValidInputEmail.png' style='width:100px; height:100px; object-fit:cover;'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:38:05 PM</td>
+        <td>
+          Registration Message:  <span style='color:green;'>PASSED! Expected to contain: 'Successfully registered' | Actual: 'Successfully registered the following information'</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:38:05 PM</td>
+        <td>
+          Registered Last Name:  <span style='color:red;'>FAILED! Expected: Monkey | Actual: Monke</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:38:05 PM</td>
+        <td>
+          Registered Phone Number:  <span style='color:red;'>FAILED! Expected: 1234567890 | Actual: 1234567891</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:38:05 PM</td>
+        <td>
+          Registered Email:  <span style='color:green;'>PASSED! Expected: luffy@op.com | Actual: luffy@op.com</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:38:05 PM</td>
+        <td>
+           <span style='color:green;'>❌ FAILED 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:38:05 PM</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: The following asserts failed:
+	expected [Monkey] but found [Monke],
+	expected [1234567890] but found [1234567891]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.DatacomBugsFormTestEmail.runEmailTest(DatacomBugsFormTestEmail.java:66)
+	at tests.DatacomBugsFormTestEmail.testValidInputEmail(DatacomBugsFormTestEmail.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="12"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testLessMinimumInputPhone</p>
+            <p class="text-sm">
+              <span>7:38:02 PM</span> / <span>00:00:03:671</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testLessMinimumInputPhone</h5>
+<span class='badge badge-success'>09.27.2025 7:38:02 PM</span>
+<span class='badge badge-danger'>09.27.2025 7:38:06 PM</span>
+<span class='badge badge-default'>00:00:03:671</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:05 PM</td>
+        <td>
+          1. Navigating to Datacom Bugs-Form
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:06 PM</td>
+        <td>
+          2. Filling-up the fields<br><a href='screenshots/testLessMinimumInputPhone.png' target='_blank'><img src='screenshots/testLessMinimumInputPhone.png' style='width:100px; height:100px; object-fit:cover;'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:06 PM</td>
+        <td>
+          3. Click register
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:06 PM</td>
+        <td>
+          4. Verify registration message<br><a href='screenshots/RegistrationMsg_testLessMinimumInputPhone.png' target='_blank'><img src='screenshots/RegistrationMsg_testLessMinimumInputPhone.png' style='width:100px; height:100px; object-fit:cover;'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:38:06 PM</td>
+        <td>
+          Registration Message:  <span style='color:green;'>PASSED! Expected to contain: 'The phone number should contain at least 10 characters!' | Actual: 'The phone number should contain at least 10 characters!'</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:38:06 PM</td>
+        <td>
+          Registered Last Name:  <span style='color:red;'>FAILED! Expected: Monkey | Actual: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:38:06 PM</td>
+        <td>
+          Registered Phone Number:  <span style='color:red;'>FAILED! Expected: 123456789 | Actual: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:38:06 PM</td>
+        <td>
+          Registered Email:  <span style='color:red;'>FAILED! Expected: luffy@op.com | Actual: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:38:06 PM</td>
+        <td>
+           <span style='color:green;'>❌ FAILED 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:38:06 PM</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: The following asserts failed:
+	expected [Monkey] but found [],
+	expected [123456789] but found [],
+	expected [luffy@op.com] but found []
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.DatacomBugsFormTestPhoneNumber.runPhoneTest(DatacomBugsFormTestPhoneNumber.java:70)
+	at tests.DatacomBugsFormTestPhoneNumber.testLessMinimumInputPhone(DatacomBugsFormTestPhoneNumber.java:43)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="13"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testInvalidInputFirstName</p>
+            <p class="text-sm">
+              <span>7:38:04 PM</span> / <span>00:00:02:363</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testInvalidInputFirstName</h5>
+<span class='badge badge-success'>09.27.2025 7:38:04 PM</span>
+<span class='badge badge-danger'>09.27.2025 7:38:06 PM</span>
+<span class='badge badge-default'>00:00:02:363</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:05 PM</td>
+        <td>
+          1. Navigating to Datacom Bugs-Form
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:06 PM</td>
+        <td>
+          2. Filling-up the fields<br><a href='screenshots/testInvalidInputFirstName.png' target='_blank'><img src='screenshots/testInvalidInputFirstName.png' style='width:100px; height:100px; object-fit:cover;'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:06 PM</td>
+        <td>
+          3. Click register
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:06 PM</td>
+        <td>
+          4. Verify registration message<br><a href='screenshots/Registration Message_ testInvalidInputFirstName.png' target='_blank'><img src='screenshots/Registration Message_ testInvalidInputFirstName.png' style='width:100px; height:100px; object-fit:cover;'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:38:06 PM</td>
+        <td>
+          Registration Message:  <span style='color:green;'>PASSED! Expected to contain: 'Successfully registered' | Actual: 'Successfully registered the following information'</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:38:06 PM</td>
+        <td>
+          Registered First Name:  <span style='color:green;'>PASSED! Expected: !@#123 | Actual: !@#123</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:38:06 PM</td>
+        <td>
+          Registered Last Name:  <span style='color:red;'>FAILED! Expected: Monkey | Actual: Monke</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:38:06 PM</td>
+        <td>
+          Registered Phone Number:  <span style='color:red;'>FAILED! Expected: 1234567890 | Actual: 1234567891</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:38:06 PM</td>
+        <td>
+          Registered Email:  <span style='color:green;'>PASSED! Expected: luffy@op.com | Actual: luffy@op.com</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:38:06 PM</td>
+        <td>
+           <span style='color:green;'>❌ FAILED 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:38:06 PM</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: The following asserts failed:
+	expected [Monkey] but found [Monke],
+	expected [1234567890] but found [1234567891]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.DatacomBugsFormTestName.runFirstNameTest(DatacomBugsFormTestName.java:83)
+	at tests.DatacomBugsFormTestName.testInvalidInputFirstName(DatacomBugsFormTestName.java:39)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="14"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testValidInputPhone</p>
+            <p class="text-sm">
+              <span>7:38:10 PM</span> / <span>00:00:02:276</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testValidInputPhone</h5>
+<span class='badge badge-success'>09.27.2025 7:38:10 PM</span>
+<span class='badge badge-danger'>09.27.2025 7:38:12 PM</span>
+<span class='badge badge-default'>00:00:02:276</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:11 PM</td>
+        <td>
+          1. Navigating to Datacom Bugs-Form
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:11 PM</td>
+        <td>
+          2. Filling-up the fields<br><a href='screenshots/testValidInputPhone.png' target='_blank'><img src='screenshots/testValidInputPhone.png' style='width:100px; height:100px; object-fit:cover;'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:11 PM</td>
+        <td>
+          3. Click register
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:12 PM</td>
+        <td>
+          4. Verify registration message<br><a href='screenshots/RegistrationMsg_testValidInputPhone.png' target='_blank'><img src='screenshots/RegistrationMsg_testValidInputPhone.png' style='width:100px; height:100px; object-fit:cover;'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:38:12 PM</td>
+        <td>
+          Registration Message:  <span style='color:green;'>PASSED! Expected to contain: 'Successfully registered' | Actual: 'Successfully registered the following information'</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:38:12 PM</td>
+        <td>
+          Registered Last Name:  <span style='color:red;'>FAILED! Expected: Monkey | Actual: Monke</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:38:12 PM</td>
+        <td>
+          Registered Phone Number:  <span style='color:red;'>FAILED! Expected: 1234567890 | Actual: 1234567891</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:38:12 PM</td>
+        <td>
+          Registered Email:  <span style='color:green;'>PASSED! Expected: luffy@op.com | Actual: luffy@op.com</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:38:12 PM</td>
+        <td>
+           <span style='color:green;'>❌ FAILED 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:38:12 PM</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: The following asserts failed:
+	expected [Monkey] but found [Monke],
+	expected [1234567890] but found [1234567891]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.DatacomBugsFormTestPhoneNumber.runPhoneTest(DatacomBugsFormTestPhoneNumber.java:70)
+	at tests.DatacomBugsFormTestPhoneNumber.testValidInputPhone(DatacomBugsFormTestPhoneNumber.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="15"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testInvalidInputLastName</p>
+            <p class="text-sm">
+              <span>7:38:10 PM</span> / <span>00:00:02:330</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testInvalidInputLastName</h5>
+<span class='badge badge-success'>09.27.2025 7:38:10 PM</span>
+<span class='badge badge-danger'>09.27.2025 7:38:12 PM</span>
+<span class='badge badge-default'>00:00:02:330</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:10 PM</td>
+        <td>
+          1. Navigating to Datacom Bugs-Form
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:11 PM</td>
+        <td>
+          2. Filling-up the fields<br><a href='screenshots/testInvalidInputLastName.png' target='_blank'><img src='screenshots/testInvalidInputLastName.png' style='width:100px; height:100px; object-fit:cover;'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:11 PM</td>
+        <td>
+          3. Click register
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:12 PM</td>
+        <td>
+          4. Verify registration message<br><a href='screenshots/Registration Message_ testInvalidInputLastName.png' target='_blank'><img src='screenshots/Registration Message_ testInvalidInputLastName.png' style='width:100px; height:100px; object-fit:cover;'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:38:12 PM</td>
+        <td>
+          Registration Message:  <span style='color:red;'>FAILED! Expected to contain: 'Unsuccessful' | Actual: 'Successfully registered the following information'</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:38:12 PM</td>
+        <td>
+          Registered Last Name:  <span style='color:red;'>FAILED! Expected: !@#123 | Actual: !@#12</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:38:12 PM</td>
+        <td>
+          Registered Phone Number:  <span style='color:red;'>FAILED! Expected: 1234567890 | Actual: 1234567891</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:38:12 PM</td>
+        <td>
+          Registered Email:  <span style='color:green;'>PASSED! Expected: luffy@op.com | Actual: luffy@op.com</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:38:12 PM</td>
+        <td>
+           <span style='color:green;'>❌ FAILED 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:38:12 PM</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: The following asserts failed:
+	Expected actual to contain: Unsuccessful but was: Successfully registered the following information expected [true] but found [false],
+	expected [!@#123] but found [!@#12],
+	expected [1234567890] but found [1234567891]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.DatacomBugsFormTestName.runLastNameTest(DatacomBugsFormTestName.java:106)
+	at tests.DatacomBugsFormTestName.testInvalidInputLastName(DatacomBugsFormTestName.java:54)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="16"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testValidInputPassword</p>
+            <p class="text-sm">
+              <span>7:38:10 PM</span> / <span>00:00:02:455</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testValidInputPassword</h5>
+<span class='badge badge-success'>09.27.2025 7:38:10 PM</span>
+<span class='badge badge-danger'>09.27.2025 7:38:12 PM</span>
+<span class='badge badge-default'>00:00:02:455</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:11 PM</td>
+        <td>
+          1. Navigating to Datacom Bugs-Form
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:11 PM</td>
+        <td>
+          2. Filling-up the fields<br><a href='screenshots/testValidInputPassword.png' target='_blank'><img src='screenshots/testValidInputPassword.png' style='width:100px; height:100px; object-fit:cover;'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:11 PM</td>
+        <td>
+          3. Click register
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:12 PM</td>
+        <td>
+          4. Verify registration message<br><a href='screenshots/RegistrationMsg_testValidInputPassword.png' target='_blank'><img src='screenshots/RegistrationMsg_testValidInputPassword.png' style='width:100px; height:100px; object-fit:cover;'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:38:12 PM</td>
+        <td>
+          Registration Message:  <span style='color:green;'>PASSED! Expected to contain: 'Successfully registered' | Actual: 'Successfully registered the following information'</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:38:12 PM</td>
+        <td>
+          Registered Last Name:  <span style='color:red;'>FAILED! Expected: Monkey | Actual: Monke</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:38:12 PM</td>
+        <td>
+          Registered Phone Number:  <span style='color:red;'>FAILED! Expected: 1234567890 | Actual: 1234567891</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:38:12 PM</td>
+        <td>
+          Registered Email:  <span style='color:green;'>PASSED! Expected: luffy@op.com | Actual: luffy@op.com</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:38:12 PM</td>
+        <td>
+           <span style='color:green;'>❌ FAILED 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:38:12 PM</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: The following asserts failed:
+	expected [Monkey] but found [Monke],
+	expected [1234567890] but found [1234567891]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.DatacomBugsFormTestPassword.runPasswordTest(DatacomBugsFormTestPassword.java:70)
+	at tests.DatacomBugsFormTestPassword.testValidInputPassword(DatacomBugsFormTestPassword.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="17"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testValidInputFirstName</p>
+            <p class="text-sm">
+              <span>7:38:14 PM</span> / <span>00:00:01:652</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testValidInputFirstName</h5>
+<span class='badge badge-success'>09.27.2025 7:38:14 PM</span>
+<span class='badge badge-danger'>09.27.2025 7:38:16 PM</span>
+<span class='badge badge-default'>00:00:01:652</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:15 PM</td>
+        <td>
+          1. Navigating to Datacom Bugs-Form
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:15 PM</td>
+        <td>
+          2. Filling-up the fields<br><a href='screenshots/testValidInputFirstName.png' target='_blank'><img src='screenshots/testValidInputFirstName.png' style='width:100px; height:100px; object-fit:cover;'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:15 PM</td>
+        <td>
+          3. Click register
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:16 PM</td>
+        <td>
+          4. Verify registration message<br><a href='screenshots/Registration Message_ testValidInputFirstName.png' target='_blank'><img src='screenshots/Registration Message_ testValidInputFirstName.png' style='width:100px; height:100px; object-fit:cover;'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:38:16 PM</td>
+        <td>
+          Registration Message:  <span style='color:green;'>PASSED! Expected to contain: 'Successfully registered' | Actual: 'Successfully registered the following information'</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:38:16 PM</td>
+        <td>
+          Registered First Name:  <span style='color:green;'>PASSED! Expected: Luffy | Actual: Luffy</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:38:16 PM</td>
+        <td>
+          Registered Last Name:  <span style='color:red;'>FAILED! Expected: Monkey | Actual: Monke</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:38:16 PM</td>
+        <td>
+          Registered Phone Number:  <span style='color:red;'>FAILED! Expected: 1234567890 | Actual: 1234567891</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:38:16 PM</td>
+        <td>
+          Registered Email:  <span style='color:green;'>PASSED! Expected: luffy@op.com | Actual: luffy@op.com</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:38:16 PM</td>
+        <td>
+           <span style='color:green;'>❌ FAILED 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:38:16 PM</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: The following asserts failed:
+	expected [Monkey] but found [Monke],
+	expected [1234567890] but found [1234567891]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.DatacomBugsFormTestName.runFirstNameTest(DatacomBugsFormTestName.java:83)
+	at tests.DatacomBugsFormTestName.testValidInputFirstName(DatacomBugsFormTestName.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="18"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testValidInputLastName</p>
+            <p class="text-sm">
+              <span>7:38:17 PM</span> / <span>00:00:01:582</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testValidInputLastName</h5>
+<span class='badge badge-success'>09.27.2025 7:38:17 PM</span>
+<span class='badge badge-danger'>09.27.2025 7:38:19 PM</span>
+<span class='badge badge-default'>00:00:01:582</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:18 PM</td>
+        <td>
+          1. Navigating to Datacom Bugs-Form
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:19 PM</td>
+        <td>
+          2. Filling-up the fields<br><a href='screenshots/testValidInputLastName.png' target='_blank'><img src='screenshots/testValidInputLastName.png' style='width:100px; height:100px; object-fit:cover;'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:19 PM</td>
+        <td>
+          3. Click register
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:38:19 PM</td>
+        <td>
+          4. Verify registration message<br><a href='screenshots/Registration Message_ testValidInputLastName.png' target='_blank'><img src='screenshots/Registration Message_ testValidInputLastName.png' style='width:100px; height:100px; object-fit:cover;'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:38:19 PM</td>
+        <td>
+          Registration Message:  <span style='color:green;'>PASSED! Expected to contain: 'Successfully registered' | Actual: 'Successfully registered the following information'</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:38:19 PM</td>
+        <td>
+          Registered Last Name:  <span style='color:red;'>FAILED! Expected: Monkey | Actual: Monke</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:38:19 PM</td>
+        <td>
+          Registered Phone Number:  <span style='color:red;'>FAILED! Expected: 1234567890 | Actual: 1234567891</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:38:19 PM</td>
+        <td>
+          Registered Email:  <span style='color:green;'>PASSED! Expected: luffy@op.com | Actual: luffy@op.com</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:38:19 PM</td>
+        <td>
+           <span style='color:green;'>❌ FAILED 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:38:19 PM</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: The following asserts failed:
+	expected [Monkey] but found [Monke],
+	expected [1234567890] but found [1234567891]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.DatacomBugsFormTestName.runLastNameTest(DatacomBugsFormTestName.java:106)
+	at tests.DatacomBugsFormTestName.testValidInputLastName(DatacomBugsFormTestName.java:49)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>15</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">15 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>15 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:37:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>testCountryDropdownOptions</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:37:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>testEmptyInputPhone</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:37:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>testEmptyInputEmail</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:37:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>testEmptyInputFirstName</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:37:55 PM</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>testInvalidInputPhone</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:37:55 PM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>testInvalidInputEmail</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:37:56 PM</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>testEmptyInputLastName</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:38:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>testValidInputEmail</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:38:04 PM</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>testInvalidInputFirstName</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:38:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>testLessMinimumInputPhone</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:38:10 PM</td>
+<td>
+<a href="#" class="linked" test-id='14' id='14'>testValidInputPhone</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:38:10 PM</td>
+<td>
+<a href="#" class="linked" test-id='15' id='15'>testInvalidInputLastName</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:38:10 PM</td>
+<td>
+<a href="#" class="linked" test-id='16' id='16'>testValidInputPassword</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:38:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='17' id='17'>testValidInputFirstName</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:38:17 PM</td>
+<td>
+<a href="#" class="linked" test-id='18' id='18'>testValidInputLastName</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Sep 27, 2025 07:37:33 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Sep 27, 2025 07:38:20 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>3</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>15</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='16%'>
+<b>3</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='83%'><b>15</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='11%'><b>32</b> events passed</small></div>
+<div>
+<small data-tooltip='23%'><b>63</b> events failed,
+<b data-tooltip='%'>178</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"testEmptyInputPassword":4.843,"testEmptyInputFirstName":5.708,"testCountryDropdownOptions":3.305,"testEmptyInputEmail":4.299,"testEmptyInputPhone":4.029,"testInvalidInputEmail":3.931,"testInvalidInputPhone":3.443,"testLessMinimumInputPassword":3.603,"testEmptyInputLastName":3.414,"testMoreThanMaxInputPassword":4.659,"testValidInputEmail":3.32,"testLessMinimumInputPhone":3.671,"testInvalidInputFirstName":2.363,"testValidInputPhone":2.276,"testInvalidInputLastName":2.33,"testValidInputPassword":2.455,"testValidInputFirstName":1.652,"testValidInputLastName":1.582
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>QA Engr.</td>
+<td>King</td>
+</tr>
+<tr>
+<td>Executed By</td>
+<td>kingb</td>
+</tr>
+<tr>
+<td>OS</td>
+<td>Windows 11</td>
+</tr>
+<tr>
+<td>Environment</td>
+<td>QA</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 3,
+failParent: 15,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 32,
+failEvents: 63,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 178
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

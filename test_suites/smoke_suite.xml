@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="PlaywrightSuite" parallel="classes" thread-count="5">
+
+	<listeners>
+		<listener class-name="com.datacom.framework.reports.TestListener" />
+	</listeners>
+
+	<parameter name="browserName" value="chromium" />
+	<test name="Smoke Testing Suite">
+		<groups>
+			<run>
+				<include name="smoke" />
+			</run>
+		</groups>
+		<packages>
+			<package name="tests" />
+		</packages>
+	</test>
+</suite>
+
+

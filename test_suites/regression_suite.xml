@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="PlaywrightSuite" parallel="tests" thread-count="10">
+
+	<listeners>
+		<listener class-name="com.datacom.framework.reports.TestListener" />
+	</listeners>
+
+	<parameter name="browserName" value="chromium" />
+	<test name="Regression Testing Suite">
+		<groups>
+			<run>
+				<include name="regression" />
+			</run>
+		</groups>
+		<packages>
+			<package name="tests" />
+		</packages>
+	</test>
+</suite>

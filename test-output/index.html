@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 15 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-PlaywrightSuite" class="navigator-link">
+              <span class="suite-name border-failed">PlaywrightSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-PlaywrightSuite" class="navigator-link ">
+                    <span>C:\Users\kingb\git\datacom-automation\test_suites\smoke_suite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-PlaywrightSuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-PlaywrightSuite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-PlaywrightSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-PlaywrightSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-PlaywrightSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-PlaywrightSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">18 methods, 15 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-PlaywrightSuite" class="hide-methods failed suite-PlaywrightSuite"> (hide)</a> <!-- hide-methods failed suite-PlaywrightSuite -->
+                      <a href="#" panel-name="suite-PlaywrightSuite" class="show-methods failed suite-PlaywrightSuite"> (show)</a> <!-- show-methods failed suite-PlaywrightSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-PlaywrightSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PlaywrightSuite" title="tests.DatacomBugsFormTestCountry" class="method navigator-link" hash-for-method="testCountryDropdownOptions">testCountryDropdownOptions</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PlaywrightSuite" title="tests.DatacomBugsFormTestEmail" class="method navigator-link" hash-for-method="testEmptyInputEmail(com.datacom.framework.models.UserData@70103591)">testEmptyInputEmail(com.datacom.framework.models.UserData@70103591)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PlaywrightSuite" title="tests.DatacomBugsFormTestName" class="method navigator-link" hash-for-method="testEmptyInputFirstName(com.datacom.framework.models.UserData@5410620c)">testEmptyInputFirstName(com.datacom.framework.models.UserData@5410620c)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PlaywrightSuite" title="tests.DatacomBugsFormTestName" class="method navigator-link" hash-for-method="testEmptyInputLastName(com.datacom.framework.models.UserData@59446661)">testEmptyInputLastName(com.datacom.framework.models.UserData@59446661)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PlaywrightSuite" title="tests.DatacomBugsFormTestPhoneNumber" class="method navigator-link" hash-for-method="testEmptyInputPhone(com.datacom.framework.models.UserData@1452d717)">testEmptyInputPhone(com.datacom.framework.models.UserData@1452d717)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PlaywrightSuite" title="tests.DatacomBugsFormTestEmail" class="method navigator-link" hash-for-method="testInvalidInputEmail(com.datacom.framework.models.UserData@778b3e58)">testInvalidInputEmail(com.datacom.framework.models.UserData@778b3e58)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PlaywrightSuite" title="tests.DatacomBugsFormTestName" class="method navigator-link" hash-for-method="testInvalidInputFirstName(com.datacom.framework.models.UserData@5f944328)">testInvalidInputFirstName(com.datacom.framework.models.UserData@5f944328)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PlaywrightSuite" title="tests.DatacomBugsFormTestName" class="method navigator-link" hash-for-method="testInvalidInputLastName(com.datacom.framework.models.UserData@4fe9ff1f)">testInvalidInputLastName(com.datacom.framework.models.UserData@4fe9ff1f)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PlaywrightSuite" title="tests.DatacomBugsFormTestPhoneNumber" class="method navigator-link" hash-for-method="testInvalidInputPhone(com.datacom.framework.models.UserData@54e7d2fb)">testInvalidInputPhone(com.datacom.framework.models.UserData@54e7d2fb)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PlaywrightSuite" title="tests.DatacomBugsFormTestPhoneNumber" class="method navigator-link" hash-for-method="testLessMinimumInputPhone(com.datacom.framework.models.UserData@3230d370)">testLessMinimumInputPhone(com.datacom.framework.models.UserData@3230d370)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PlaywrightSuite" title="tests.DatacomBugsFormTestEmail" class="method navigator-link" hash-for-method="testValidInputEmail(com.datacom.framework.models.UserData@713883b6)">testValidInputEmail(com.datacom.framework.models.UserData@713883b6)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PlaywrightSuite" title="tests.DatacomBugsFormTestName" class="method navigator-link" hash-for-method="testValidInputFirstName(com.datacom.framework.models.UserData@b7d3a2a)">testValidInputFirstName(com.datacom.framework.models.UserData@b7d3a2a)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PlaywrightSuite" title="tests.DatacomBugsFormTestName" class="method navigator-link" hash-for-method="testValidInputLastName(com.datacom.framework.models.UserData@120fce07)">testValidInputLastName(com.datacom.framework.models.UserData@120fce07)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PlaywrightSuite" title="tests.DatacomBugsFormTestPassword" class="method navigator-link" hash-for-method="testValidInputPassword(com.datacom.framework.models.UserData@6934ed95)">testValidInputPassword(com.datacom.framework.models.UserData@6934ed95)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PlaywrightSuite" title="tests.DatacomBugsFormTestPhoneNumber" class="method navigator-link" hash-for-method="testValidInputPhone(com.datacom.framework.models.UserData@4a676dec)">testValidInputPhone(com.datacom.framework.models.UserData@4a676dec)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-PlaywrightSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-PlaywrightSuite" class="hide-methods passed suite-PlaywrightSuite"> (hide)</a> <!-- hide-methods passed suite-PlaywrightSuite -->
+                      <a href="#" panel-name="suite-PlaywrightSuite" class="show-methods passed suite-PlaywrightSuite"> (show)</a> <!-- show-methods passed suite-PlaywrightSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-PlaywrightSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PlaywrightSuite" title="tests.DatacomBugsFormTestPassword" class="method navigator-link" hash-for-method="testEmptyInputPassword(com.datacom.framework.models.UserData@e5aee39)">testEmptyInputPassword(com.datacom.framework.models.UserData@e5aee39)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PlaywrightSuite" title="tests.DatacomBugsFormTestPassword" class="method navigator-link" hash-for-method="testLessMinimumInputPassword(com.datacom.framework.models.UserData@42bb7254)">testLessMinimumInputPassword(com.datacom.framework.models.UserData@42bb7254)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PlaywrightSuite" title="tests.DatacomBugsFormTestPassword" class="method navigator-link" hash-for-method="testMoreThanMaxInputPassword(com.datacom.framework.models.UserData@5dd05269)">testMoreThanMaxInputPassword(com.datacom.framework.models.UserData@5dd05269)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-PlaywrightSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-PlaywrightSuite" class="panel PlaywrightSuite">
+          <div class="suite-PlaywrightSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.DatacomBugsFormTestEmail</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEmptyInputEmail(com.datacom.framework.models.UserData@70103591)">
+                  </a> <!-- testEmptyInputEmail(com.datacom.framework.models.UserData@70103591) -->
+                  <span class="method-name">testEmptyInputEmail</span>
+                  <span class="parameters">(com.datacom.framework.models.UserData@70103591)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Expected actual to contain: Unsuccessful  - Email field should not be empty since its marked as mandatory field(*)  but was: Successfully registered the following information expected [true] but found [false],
+	expected [Monkey] but found [Monke],
+	expected [1234567890] but found [1234567891]
+	at tests.DatacomBugsFormTestEmail.runEmailTest(DatacomBugsFormTestEmail.java:66)
+	at tests.DatacomBugsFormTestEmail.testEmptyInputEmail(DatacomBugsFormTestEmail.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidInputEmail(com.datacom.framework.models.UserData@778b3e58)">
+                  </a> <!-- testInvalidInputEmail(com.datacom.framework.models.UserData@778b3e58) -->
+                  <span class="method-name">testInvalidInputEmail</span>
+                  <span class="parameters">(com.datacom.framework.models.UserData@778b3e58)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Expected actual to contain: Unsuccessful  - Email field should only accept input value with @ and &apos;.&apos; format  but was: Successfully registered the following information expected [true] but found [false],
+	expected [Monkey] but found [Monke],
+	expected [1234567890] but found [1234567891]
+	at tests.DatacomBugsFormTestEmail.runEmailTest(DatacomBugsFormTestEmail.java:66)
+	at tests.DatacomBugsFormTestEmail.testInvalidInputEmail(DatacomBugsFormTestEmail.java:38)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidInputEmail(com.datacom.framework.models.UserData@713883b6)">
+                  </a> <!-- testValidInputEmail(com.datacom.framework.models.UserData@713883b6) -->
+                  <span class="method-name">testValidInputEmail</span>
+                  <span class="parameters">(com.datacom.framework.models.UserData@713883b6)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [Monkey] but found [Monke],
+	expected [1234567890] but found [1234567891]
+	at tests.DatacomBugsFormTestEmail.runEmailTest(DatacomBugsFormTestEmail.java:66)
+	at tests.DatacomBugsFormTestEmail.testValidInputEmail(DatacomBugsFormTestEmail.java:33)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PlaywrightSuite-class-failed -->
+          <div class="suite-PlaywrightSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.DatacomBugsFormTestCountry</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCountryDropdownOptions">
+                  </a> <!-- testCountryDropdownOptions -->
+                  <span class="method-name">testCountryDropdownOptions</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: American Samoa,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Anguilla,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Antigua &amp; Barbuda,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Aruba,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Bermuda,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Bonaire,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Bosnia &amp; Herzegovina,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: British Indian Ocean Ter,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Canary Islands,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Cape Verde,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Cayman Islands,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Channel Islands,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Christmas Island,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Cocos Island,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Congo,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Cook Islands,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Cote DIvoire,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Curacao,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Czech Republic,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: East Timor,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Falkland Islands,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Faroe Islands,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: French Guiana,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: French Polynesia,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: French Southern Ter,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Gibraltar,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Great Britain,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Greenland,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Guadeloupe,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Guam,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Hawaii,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Hong Kong,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Isle of Man,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Korea North,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Korea South,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Macau,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Macedonia,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Martinique,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Mayotte,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Midway Islands,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Montserrat,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Myanmar,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Nambia,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Netherland Antilles,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Netherlands (Holland, Europe),
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Nevis,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: New Caledonia,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Niue,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Norfolk Island,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Palau Island,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Palestine,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Pitcairn Island,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Puerto Rico,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Republic of Montenegro,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Republic of Serbia,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Reunion,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: St Barthelemy,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: St Eustatius,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: St Helena,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: St Kitts-Nevis,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: St Lucia,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: St Maarten,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: St Pierre &amp; Miquelon,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: St Vincent &amp; Grenadines,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Saipan,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Samoa American,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Sao Tome &amp; Principe,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Swaziland,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Tahiti,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Taiwan,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Tokelau,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Trinidad &amp; Tobago,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Turks &amp; Caicos Is,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Vatican City State,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Virgin Islands (Brit),
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Virgin Islands (USA),
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Wake Island,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Wallis &amp; Futana Is,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Zaire,
+	Missing country: Antigua and Barbuda,
+	Missing country: Bosnia and Herzegovina,
+	Missing country: Cabo Verde,
+	Missing country: Congo (Congo-Brazzaville),
+	Missing country: Côte d&apos;Ivoire,
+	Missing country: Czechia (Czech Republic),
+	Missing country: Democratic Republic of the Congo,
+	Missing country: Eswatini (fmr. &quot;&quot;Swaziland&quot;&quot;),
+	Missing country: Guinea-Bissau,
+	Missing country: Holy See,
+	Missing country: Micronesia,
+	Missing country: Montenegro,
+	Missing country: Myanmar (formerly Burma),
+	Missing country: Namibia,
+	Missing country: Netherlands,
+	Missing country: North Korea,
+	Missing country: North Macedonia,
+	Missing country: Palau,
+	Missing country: Palestine State,
+	Missing country: Saint Kitts and Nevis,
+	Missing country: Saint Lucia,
+	Missing country: Saint Vincent and the Grenadines,
+	Missing country: Sao Tome and Principe,
+	Missing country: Serbia,
+	Missing country: South Korea,
+	Missing country: South Sudan,
+	Missing country: Timor-Leste,
+	Missing country: Trinidad and Tobago
+	at tests.DatacomBugsFormTestCountry.testCountryDropdownOptions(DatacomBugsFormTestCountry.java:67)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PlaywrightSuite-class-failed -->
+          <div class="suite-PlaywrightSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.DatacomBugsFormTestName</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEmptyInputFirstName(com.datacom.framework.models.UserData@5410620c)">
+                  </a> <!-- testEmptyInputFirstName(com.datacom.framework.models.UserData@5410620c) -->
+                  <span class="method-name">testEmptyInputFirstName</span>
+                  <span class="parameters">(com.datacom.framework.models.UserData@5410620c)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [Monkey] but found [Monke],
+	expected [1234567890] but found [1234567891]
+	at tests.DatacomBugsFormTestName.runFirstNameTest(DatacomBugsFormTestName.java:83)
+	at tests.DatacomBugsFormTestName.testEmptyInputFirstName(DatacomBugsFormTestName.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEmptyInputLastName(com.datacom.framework.models.UserData@59446661)">
+                  </a> <!-- testEmptyInputLastName(com.datacom.framework.models.UserData@59446661) -->
+                  <span class="method-name">testEmptyInputLastName</span>
+                  <span class="parameters">(com.datacom.framework.models.UserData@59446661)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Expected actual to contain: Unsuccessful but was: Successfully registered the following information expected [true] but found [false],
+	expected [1234567890] but found [1234567891]
+	at tests.DatacomBugsFormTestName.runLastNameTest(DatacomBugsFormTestName.java:106)
+	at tests.DatacomBugsFormTestName.testEmptyInputLastName(DatacomBugsFormTestName.java:59)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidInputFirstName(com.datacom.framework.models.UserData@5f944328)">
+                  </a> <!-- testInvalidInputFirstName(com.datacom.framework.models.UserData@5f944328) -->
+                  <span class="method-name">testInvalidInputFirstName</span>
+                  <span class="parameters">(com.datacom.framework.models.UserData@5f944328)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [Monkey] but found [Monke],
+	expected [1234567890] but found [1234567891]
+	at tests.DatacomBugsFormTestName.runFirstNameTest(DatacomBugsFormTestName.java:83)
+	at tests.DatacomBugsFormTestName.testInvalidInputFirstName(DatacomBugsFormTestName.java:39)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidInputLastName(com.datacom.framework.models.UserData@4fe9ff1f)">
+                  </a> <!-- testInvalidInputLastName(com.datacom.framework.models.UserData@4fe9ff1f) -->
+                  <span class="method-name">testInvalidInputLastName</span>
+                  <span class="parameters">(com.datacom.framework.models.UserData@4fe9ff1f)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Expected actual to contain: Unsuccessful but was: Successfully registered the following information expected [true] but found [false],
+	expected [!@#123] but found [!@#12],
+	expected [1234567890] but found [1234567891]
+	at tests.DatacomBugsFormTestName.runLastNameTest(DatacomBugsFormTestName.java:106)
+	at tests.DatacomBugsFormTestName.testInvalidInputLastName(DatacomBugsFormTestName.java:54)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidInputFirstName(com.datacom.framework.models.UserData@b7d3a2a)">
+                  </a> <!-- testValidInputFirstName(com.datacom.framework.models.UserData@b7d3a2a) -->
+                  <span class="method-name">testValidInputFirstName</span>
+                  <span class="parameters">(com.datacom.framework.models.UserData@b7d3a2a)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [Monkey] but found [Monke],
+	expected [1234567890] but found [1234567891]
+	at tests.DatacomBugsFormTestName.runFirstNameTest(DatacomBugsFormTestName.java:83)
+	at tests.DatacomBugsFormTestName.testValidInputFirstName(DatacomBugsFormTestName.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidInputLastName(com.datacom.framework.models.UserData@120fce07)">
+                  </a> <!-- testValidInputLastName(com.datacom.framework.models.UserData@120fce07) -->
+                  <span class="method-name">testValidInputLastName</span>
+                  <span class="parameters">(com.datacom.framework.models.UserData@120fce07)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [Monkey] but found [Monke],
+	expected [1234567890] but found [1234567891]
+	at tests.DatacomBugsFormTestName.runLastNameTest(DatacomBugsFormTestName.java:106)
+	at tests.DatacomBugsFormTestName.testValidInputLastName(DatacomBugsFormTestName.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PlaywrightSuite-class-failed -->
+          <div class="suite-PlaywrightSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.DatacomBugsFormTestPhoneNumber</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEmptyInputPhone(com.datacom.framework.models.UserData@1452d717)">
+                  </a> <!-- testEmptyInputPhone(com.datacom.framework.models.UserData@1452d717) -->
+                  <span class="method-name">testEmptyInputPhone</span>
+                  <span class="parameters">(com.datacom.framework.models.UserData@1452d717)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [Monkey] but found [],
+	expected [luffy@op.com] but found []
+	at tests.DatacomBugsFormTestPhoneNumber.runPhoneTest(DatacomBugsFormTestPhoneNumber.java:70)
+	at tests.DatacomBugsFormTestPhoneNumber.testEmptyInputPhone(DatacomBugsFormTestPhoneNumber.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidInputPhone(com.datacom.framework.models.UserData@54e7d2fb)">
+                  </a> <!-- testInvalidInputPhone(com.datacom.framework.models.UserData@54e7d2fb) -->
+                  <span class="method-name">testInvalidInputPhone</span>
+                  <span class="parameters">(com.datacom.framework.models.UserData@54e7d2fb)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Expected actual to contain: Unsuccessful - Phone Number field should only accept numeric values  but was: Successfully registered the following information expected [true] but found [false],
+	expected [Monkey] but found [Monke],
+	expected [QWERTY!@#$%] but found [QWERTY!@#$NaN]
+	at tests.DatacomBugsFormTestPhoneNumber.runPhoneTest(DatacomBugsFormTestPhoneNumber.java:70)
+	at tests.DatacomBugsFormTestPhoneNumber.testInvalidInputPhone(DatacomBugsFormTestPhoneNumber.java:38)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLessMinimumInputPhone(com.datacom.framework.models.UserData@3230d370)">
+                  </a> <!-- testLessMinimumInputPhone(com.datacom.framework.models.UserData@3230d370) -->
+                  <span class="method-name">testLessMinimumInputPhone</span>
+                  <span class="parameters">(com.datacom.framework.models.UserData@3230d370)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [Monkey] but found [],
+	expected [123456789] but found [],
+	expected [luffy@op.com] but found []
+	at tests.DatacomBugsFormTestPhoneNumber.runPhoneTest(DatacomBugsFormTestPhoneNumber.java:70)
+	at tests.DatacomBugsFormTestPhoneNumber.testLessMinimumInputPhone(DatacomBugsFormTestPhoneNumber.java:43)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidInputPhone(com.datacom.framework.models.UserData@4a676dec)">
+                  </a> <!-- testValidInputPhone(com.datacom.framework.models.UserData@4a676dec) -->
+                  <span class="method-name">testValidInputPhone</span>
+                  <span class="parameters">(com.datacom.framework.models.UserData@4a676dec)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [Monkey] but found [Monke],
+	expected [1234567890] but found [1234567891]
+	at tests.DatacomBugsFormTestPhoneNumber.runPhoneTest(DatacomBugsFormTestPhoneNumber.java:70)
+	at tests.DatacomBugsFormTestPhoneNumber.testValidInputPhone(DatacomBugsFormTestPhoneNumber.java:33)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PlaywrightSuite-class-failed -->
+          <div class="suite-PlaywrightSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.DatacomBugsFormTestPassword</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidInputPassword(com.datacom.framework.models.UserData@6934ed95)">
+                  </a> <!-- testValidInputPassword(com.datacom.framework.models.UserData@6934ed95) -->
+                  <span class="method-name">testValidInputPassword</span>
+                  <span class="parameters">(com.datacom.framework.models.UserData@6934ed95)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [Monkey] but found [Monke],
+	expected [1234567890] but found [1234567891]
+	at tests.DatacomBugsFormTestPassword.runPasswordTest(DatacomBugsFormTestPassword.java:70)
+	at tests.DatacomBugsFormTestPassword.testValidInputPassword(DatacomBugsFormTestPassword.java:33)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PlaywrightSuite-class-failed -->
+          <div class="suite-PlaywrightSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.DatacomBugsFormTestPassword</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEmptyInputPassword(com.datacom.framework.models.UserData@e5aee39)">
+                  </a> <!-- testEmptyInputPassword(com.datacom.framework.models.UserData@e5aee39) -->
+                  <span class="method-name">testEmptyInputPassword</span>
+                  <span class="parameters">(com.datacom.framework.models.UserData@e5aee39)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLessMinimumInputPassword(com.datacom.framework.models.UserData@42bb7254)">
+                  </a> <!-- testLessMinimumInputPassword(com.datacom.framework.models.UserData@42bb7254) -->
+                  <span class="method-name">testLessMinimumInputPassword</span>
+                  <span class="parameters">(com.datacom.framework.models.UserData@42bb7254)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMoreThanMaxInputPassword(com.datacom.framework.models.UserData@5dd05269)">
+                  </a> <!-- testMoreThanMaxInputPassword(com.datacom.framework.models.UserData@5dd05269) -->
+                  <span class="method-name">testMoreThanMaxInputPassword</span>
+                  <span class="parameters">(com.datacom.framework.models.UserData@5dd05269)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PlaywrightSuite-class-passed -->
+        </div> <!-- panel PlaywrightSuite -->
+        <div panel-name="test-xml-PlaywrightSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\kingb\git\datacom-automation\test_suites\smoke_suite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite parallel=&quot;classes&quot; name=&quot;PlaywrightSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;browserName&quot; value=&quot;chromium&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.datacom.framework.reports.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;classes&quot; name=&quot;Smoke Testing Suite&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;smoke&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;tests&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.DatacomBugsFormTestCountry&quot;/&gt;
+      &lt;class name=&quot;tests.DatacomBugsFormTestEmail&quot;/&gt;
+      &lt;class name=&quot;tests.DatacomBugsFormTestName&quot;/&gt;
+      &lt;class name=&quot;tests.DatacomBugsFormTestPassword&quot;/&gt;
+      &lt;class name=&quot;tests.DatacomBugsFormTestPhoneNumber&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Smoke Testing Suite --&gt;
+&lt;/suite&gt; &lt;!-- PlaywrightSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-PlaywrightSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for PlaywrightSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Smoke Testing Suite (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-PlaywrightSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for PlaywrightSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testCountryDropdownOptions</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testEmptyInputEmail</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testEmptyInputFirstName</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testEmptyInputLastName</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testEmptyInputPassword</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testEmptyInputPhone</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testInvalidInputEmail</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testInvalidInputFirstName</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testInvalidInputLastName</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testInvalidInputPhone</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testLessMinimumInputPassword</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testLessMinimumInputPhone</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testMoreThanMaxInputPassword</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testValidInputEmail</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testValidInputFirstName</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testValidInputLastName</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testValidInputPassword</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testValidInputPhone</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-PlaywrightSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for PlaywrightSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_PlaywrightSuite');
+function tableData_PlaywrightSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(18);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testEmptyInputFirstName')
+data.setCell(0, 2, 'tests.DatacomBugsFormTestName')
+data.setCell(0, 3, 5706);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testEmptyInputPassword')
+data.setCell(1, 2, 'tests.DatacomBugsFormTestPassword')
+data.setCell(1, 3, 4845);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testMoreThanMaxInputPassword')
+data.setCell(2, 2, 'tests.DatacomBugsFormTestPassword')
+data.setCell(2, 3, 4659);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testEmptyInputEmail')
+data.setCell(3, 2, 'tests.DatacomBugsFormTestEmail')
+data.setCell(3, 3, 4297);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testEmptyInputPhone')
+data.setCell(4, 2, 'tests.DatacomBugsFormTestPhoneNumber')
+data.setCell(4, 3, 3998);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testInvalidInputEmail')
+data.setCell(5, 2, 'tests.DatacomBugsFormTestEmail')
+data.setCell(5, 3, 3927);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testLessMinimumInputPhone')
+data.setCell(6, 2, 'tests.DatacomBugsFormTestPhoneNumber')
+data.setCell(6, 3, 3672);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testLessMinimumInputPassword')
+data.setCell(7, 2, 'tests.DatacomBugsFormTestPassword')
+data.setCell(7, 3, 3599);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testValidInputEmail')
+data.setCell(8, 2, 'tests.DatacomBugsFormTestEmail')
+data.setCell(8, 3, 3445);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testInvalidInputPhone')
+data.setCell(9, 2, 'tests.DatacomBugsFormTestPhoneNumber')
+data.setCell(9, 3, 3441);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testEmptyInputLastName')
+data.setCell(10, 2, 'tests.DatacomBugsFormTestName')
+data.setCell(10, 3, 3410);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testCountryDropdownOptions')
+data.setCell(11, 2, 'tests.DatacomBugsFormTestCountry')
+data.setCell(11, 3, 3325);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testValidInputPassword')
+data.setCell(12, 2, 'tests.DatacomBugsFormTestPassword')
+data.setCell(12, 3, 2457);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testInvalidInputFirstName')
+data.setCell(13, 2, 'tests.DatacomBugsFormTestName')
+data.setCell(13, 3, 2360);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testInvalidInputLastName')
+data.setCell(14, 2, 'tests.DatacomBugsFormTestName')
+data.setCell(14, 3, 2330);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testValidInputPhone')
+data.setCell(15, 2, 'tests.DatacomBugsFormTestPhoneNumber')
+data.setCell(15, 3, 2276);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testValidInputFirstName')
+data.setCell(16, 2, 'tests.DatacomBugsFormTestName')
+data.setCell(16, 3, 1651);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testValidInputLastName')
+data.setCell(17, 2, 'tests.DatacomBugsFormTestName')
+data.setCell(17, 3, 1581);
+window.suiteTableData['PlaywrightSuite']= { tableData: data, tableDiv: 'times-div-PlaywrightSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-PlaywrightSuite">
+              </div> <!-- times-div-PlaywrightSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-PlaywrightSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for PlaywrightSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-PlaywrightSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">4 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.DatacomBugsFormTestEmail</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDownSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.DatacomBugsFormTestName</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDownSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.DatacomBugsFormTestPhoneNumber</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDownSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.DatacomBugsFormTestPassword</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDownSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-PlaywrightSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestCountry</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chromium, public void tests.DatacomBugsFormTestCountry.testCountryDropdownOptions())</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestPassword</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chromium, public void tests.DatacomBugsFormTestPassword.testEmptyInputPassword(com.datacom.framework...)</span>
+                <span class="method-start">1980 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestPhoneNumber</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chromium, public void tests.DatacomBugsFormTestPhoneNumber.testEmptyInputPhone(com.datacom.framework...)</span>
+                <span class="method-start">1980 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestEmail</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chromium, public void tests.DatacomBugsFormTestEmail.testEmptyInputEmail(com.datacom.framework.model...)</span>
+                <span class="method-start">1981 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestName</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chromium, public void tests.DatacomBugsFormTestName.testEmptyInputFirstName(com.datacom.framework.mo...)</span>
+                <span class="method-start">1982 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestPassword</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTestObjects</span>
+                <span class="method-start">11574 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testEmptyInputPassword(com.datacom.framework.models.UserData@e5aee39)</span>
+                <span class="method-start">11603 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestName</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupPages</span>
+                <span class="method-start">11882 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testEmptyInputFirstName(com.datacom.framework.models.UserData@5410620c)</span>
+                <span class="method-start">11884 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestCountry</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupPages</span>
+                <span class="method-start">12076 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCountryDropdownOptions</span>
+                <span class="method-start">12121 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestEmail</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTestObjects</span>
+                <span class="method-start">12361 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testEmptyInputEmail(com.datacom.framework.models.UserData@70103591)</span>
+                <span class="method-start">12370 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestPhoneNumber</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTestObjects</span>
+                <span class="method-start">12385 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testEmptyInputPhone(com.datacom.framework.models.UserData@1452d717)</span>
+                <span class="method-start">12395 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestCountry</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">15485 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestPhoneNumber</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">16436 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestPassword</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">16450 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestEmail</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">16670 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestName</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">17593 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestEmail</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chromium, public void tests.DatacomBugsFormTestEmail.testInvalidInputEmail(com.datacom.framework.mod...)</span>
+                <span class="method-start">18054 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestPhoneNumber</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chromium, public void tests.DatacomBugsFormTestPhoneNumber.testInvalidInputPhone(com.datacom.framewo...)</span>
+                <span class="method-start">18204 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestPassword</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chromium, public void tests.DatacomBugsFormTestPassword.testLessMinimumInputPassword(com.datacom.fra...)</span>
+                <span class="method-start">18360 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestName</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chromium, public void tests.DatacomBugsFormTestName.testEmptyInputLastName(com.datacom.framework.mod...)</span>
+                <span class="method-start">18912 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestEmail</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTestObjects</span>
+                <span class="method-start">20508 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testInvalidInputEmail(com.datacom.framework.models.UserData@778b3e58)</span>
+                <span class="method-start">20509 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestPhoneNumber</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTestObjects</span>
+                <span class="method-start">20723 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testInvalidInputPhone(com.datacom.framework.models.UserData@54e7d2fb)</span>
+                <span class="method-start">20724 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestPassword</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTestObjects</span>
+                <span class="method-start">20811 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLessMinimumInputPassword(com.datacom.framework.models.UserData@42bb7254)</span>
+                <span class="method-start">20813 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestName</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupPages</span>
+                <span class="method-start">21832 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testEmptyInputLastName(com.datacom.framework.models.UserData@59446661)</span>
+                <span class="method-start">21832 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestPhoneNumber</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">24168 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestPassword</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">24416 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestEmail</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">24440 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestName</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">25246 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestEmail</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chromium, public void tests.DatacomBugsFormTestEmail.testValidInputEmail(com.datacom.framework.model...)</span>
+                <span class="method-start">25286 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestPassword</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chromium, public void tests.DatacomBugsFormTestPassword.testMoreThanMaxInputPassword(com.datacom.fra...)</span>
+                <span class="method-start">25344 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestPhoneNumber</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chromium, public void tests.DatacomBugsFormTestPhoneNumber.testLessMinimumInputPhone(com.datacom.fra...)</span>
+                <span class="method-start">25590 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestName</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chromium, public void tests.DatacomBugsFormTestName.testInvalidInputFirstName(com.datacom.framework....)</span>
+                <span class="method-start">26146 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestPassword</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testMoreThanMaxInputPassword(com.datacom.framework.models.UserData@5dd05269)</span>
+                <span class="method-start">27605 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTestObjects</span>
+                <span class="method-start">27605 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestEmail</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTestObjects</span>
+                <span class="method-start">27762 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testValidInputEmail(com.datacom.framework.models.UserData@713883b6)</span>
+                <span class="method-start">27762 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestPhoneNumber</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTestObjects</span>
+                <span class="method-start">28420 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLessMinimumInputPhone(com.datacom.framework.models.UserData@3230d370)</span>
+                <span class="method-start">28421 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestName</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupPages</span>
+                <span class="method-start">29725 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testInvalidInputFirstName(com.datacom.framework.models.UserData@5f944328)</span>
+                <span class="method-start">29726 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestEmail</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">31210 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestName</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">32089 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestPhoneNumber</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">32096 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestPassword</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">32265 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestName</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chromium, public void tests.DatacomBugsFormTestName.testInvalidInputLastName(com.datacom.framework.m...)</span>
+                <span class="method-start">33125 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestPassword</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chromium, public void tests.DatacomBugsFormTestPassword.testValidInputPassword(com.datacom.framework...)</span>
+                <span class="method-start">33142 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestPhoneNumber</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chromium, public void tests.DatacomBugsFormTestPhoneNumber.testValidInputPhone(com.datacom.framework...)</span>
+                <span class="method-start">33268 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTestObjects</span>
+                <span class="method-start">35510 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testValidInputPhone(com.datacom.framework.models.UserData@4a676dec)</span>
+                <span class="method-start">35511 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestName</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupPages</span>
+                <span class="method-start">35538 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testInvalidInputLastName(com.datacom.framework.models.UserData@4fe9ff1f)</span>
+                <span class="method-start">35539 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestPassword</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTestObjects</span>
+                <span class="method-start">35550 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testValidInputPassword(com.datacom.framework.models.UserData@6934ed95)</span>
+                <span class="method-start">35550 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestPhoneNumber</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">37788 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestName</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">37869 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestPassword</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">38008 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestName</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chromium, public void tests.DatacomBugsFormTestName.testValidInputFirstName(com.datacom.framework.mo...)</span>
+                <span class="method-start">38808 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setupPages</span>
+                <span class="method-start">39992 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testValidInputFirstName(com.datacom.framework.models.UserData@b7d3a2a)</span>
+                <span class="method-start">39992 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">41644 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chromium, public void tests.DatacomBugsFormTestName.testValidInputLastName(com.datacom.framework.mod...)</span>
+                <span class="method-start">42139 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setupPages</span>
+                <span class="method-start">43309 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testValidInputLastName(com.datacom.framework.models.UserData@120fce07)</span>
+                <span class="method-start">43310 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">44892 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DatacomBugsFormTestCountry</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDownSuite</span>
+                <span class="method-start">45798 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

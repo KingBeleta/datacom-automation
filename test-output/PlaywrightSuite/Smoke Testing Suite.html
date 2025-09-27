@@ -1,0 +1,795 @@
+<html>
+<head>
+<title>TestNG:  Smoke Testing Suite</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Smoke Testing Suite</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/15/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Sep 27 19:37:34 PST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>45 seconds (45408 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>smoke </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.DatacomBugsFormTestPhoneNumber.testLessMinimumInputPhone()'><b>testLessMinimumInputPhone</b><br>Test class: tests.DatacomBugsFormTestPhoneNumber<br>Parameters: com.datacom.framework.models.UserData@3230d370</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Monkey] but found [],
+	expected [123456789] but found [],
+	expected [luffy@op.com] but found []
+	at tests.DatacomBugsFormTestPhoneNumber.runPhoneTest(DatacomBugsFormTestPhoneNumber.java:70)
+	at tests.DatacomBugsFormTestPhoneNumber.testLessMinimumInputPhone(DatacomBugsFormTestPhoneNumber.java:43)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1387518835", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1387518835'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Monkey] but found [],
+	expected [123456789] but found [],
+	expected [luffy@op.com] but found []
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.DatacomBugsFormTestPhoneNumber.runPhoneTest(DatacomBugsFormTestPhoneNumber.java:70)
+	at tests.DatacomBugsFormTestPhoneNumber.testLessMinimumInputPhone(DatacomBugsFormTestPhoneNumber.java:43)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>3</td>
+<td>tests.DatacomBugsFormTestPhoneNumber@1cf56a1c</td></tr>
+<tr>
+<td title='tests.DatacomBugsFormTestName.testEmptyInputFirstName()'><b>testEmptyInputFirstName</b><br>Test class: tests.DatacomBugsFormTestName<br>Parameters: com.datacom.framework.models.UserData@5410620c</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Monkey] but found [Monke],
+	expected [1234567890] but found [1234567891]
+	at tests.DatacomBugsFormTestName.runFirstNameTest(DatacomBugsFormTestName.java:83)
+	at tests.DatacomBugsFormTestName.testEmptyInputFirstName(DatacomBugsFormTestName.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace369390988", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace369390988'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Monkey] but found [Monke],
+	expected [1234567890] but found [1234567891]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.DatacomBugsFormTestName.runFirstNameTest(DatacomBugsFormTestName.java:83)
+	at tests.DatacomBugsFormTestName.testEmptyInputFirstName(DatacomBugsFormTestName.java:44)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>5</td>
+<td>tests.DatacomBugsFormTestName@18ece7f4</td></tr>
+<tr>
+<td title='tests.DatacomBugsFormTestEmail.testEmptyInputEmail()'><b>testEmptyInputEmail</b><br>Test class: tests.DatacomBugsFormTestEmail<br>Parameters: com.datacom.framework.models.UserData@70103591</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Expected actual to contain: Unsuccessful  - Email field should not be empty since its marked as mandatory field(*)  but was: Successfully registered the following information expected [true] but found [false],
+	expected [Monkey] but found [Monke],
+	expected [1234567890] but found [1234567891]
+	at tests.DatacomBugsFormTestEmail.runEmailTest(DatacomBugsFormTestEmail.java:66)
+	at tests.DatacomBugsFormTestEmail.testEmptyInputEmail(DatacomBugsFormTestEmail.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace211682583", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace211682583'><pre>java.lang.AssertionError: The following asserts failed:
+	Expected actual to contain: Unsuccessful  - Email field should not be empty since its marked as mandatory field(*)  but was: Successfully registered the following information expected [true] but found [false],
+	expected [Monkey] but found [Monke],
+	expected [1234567890] but found [1234567891]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.DatacomBugsFormTestEmail.runEmailTest(DatacomBugsFormTestEmail.java:66)
+	at tests.DatacomBugsFormTestEmail.testEmptyInputEmail(DatacomBugsFormTestEmail.java:44)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>4</td>
+<td>tests.DatacomBugsFormTestEmail@1f760b47</td></tr>
+<tr>
+<td title='tests.DatacomBugsFormTestName.testEmptyInputLastName()'><b>testEmptyInputLastName</b><br>Test class: tests.DatacomBugsFormTestName<br>Parameters: com.datacom.framework.models.UserData@59446661</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Expected actual to contain: Unsuccessful but was: Successfully registered the following information expected [true] but found [false],
+	expected [1234567890] but found [1234567891]
+	at tests.DatacomBugsFormTestName.runLastNameTest(DatacomBugsFormTestName.java:106)
+	at tests.DatacomBugsFormTestName.testEmptyInputLastName(DatacomBugsFormTestName.java:59)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1417331409", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1417331409'><pre>java.lang.AssertionError: The following asserts failed:
+	Expected actual to contain: Unsuccessful but was: Successfully registered the following information expected [true] but found [false],
+	expected [1234567890] but found [1234567891]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.DatacomBugsFormTestName.runLastNameTest(DatacomBugsFormTestName.java:106)
+	at tests.DatacomBugsFormTestName.testEmptyInputLastName(DatacomBugsFormTestName.java:59)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>3</td>
+<td>tests.DatacomBugsFormTestName@18ece7f4</td></tr>
+<tr>
+<td title='tests.DatacomBugsFormTestEmail.testInvalidInputEmail()'><b>testInvalidInputEmail</b><br>Test class: tests.DatacomBugsFormTestEmail<br>Parameters: com.datacom.framework.models.UserData@778b3e58</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Expected actual to contain: Unsuccessful  - Email field should only accept input value with @ and &apos;.&apos; format  but was: Successfully registered the following information expected [true] but found [false],
+	expected [Monkey] but found [Monke],
+	expected [1234567890] but found [1234567891]
+	at tests.DatacomBugsFormTestEmail.runEmailTest(DatacomBugsFormTestEmail.java:66)
+	at tests.DatacomBugsFormTestEmail.testInvalidInputEmail(DatacomBugsFormTestEmail.java:38)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1438708203", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1438708203'><pre>java.lang.AssertionError: The following asserts failed:
+	Expected actual to contain: Unsuccessful  - Email field should only accept input value with @ and &apos;.&apos; format  but was: Successfully registered the following information expected [true] but found [false],
+	expected [Monkey] but found [Monke],
+	expected [1234567890] but found [1234567891]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.DatacomBugsFormTestEmail.runEmailTest(DatacomBugsFormTestEmail.java:66)
+	at tests.DatacomBugsFormTestEmail.testInvalidInputEmail(DatacomBugsFormTestEmail.java:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>3</td>
+<td>tests.DatacomBugsFormTestEmail@1f760b47</td></tr>
+<tr>
+<td title='tests.DatacomBugsFormTestCountry.testCountryDropdownOptions()'><b>testCountryDropdownOptions</b><br>Test class: tests.DatacomBugsFormTestCountry</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: American Samoa,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Anguilla,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Antigua &amp; Barbuda,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Aruba,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Bermuda,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Bonaire,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Bosnia &amp; Herzegovina,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: British Indian Ocean Ter,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Canary Islands,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Cape Verde,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Cayman Islands,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Channel Islands,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Christmas Island,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Cocos Island,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Congo,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Cook Islands,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Cote DIvoire,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Curacao,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Czech Republic,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: East Timor,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Falkland Islands,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Faroe Islands,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: French Guiana,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: French Polynesia,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: French Southern Ter,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Gibraltar,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Great Britain,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Greenland,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Guadeloupe,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Guam,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Hawaii,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Hong Kong,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Isle of Man,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Korea North,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Korea South,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Macau,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Macedonia,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Martinique,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Mayotte,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Midway Islands,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Montserrat,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Myanmar,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Nambia,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Netherland Antilles,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Netherlands (Holland, Europe),
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Nevis,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: New Caledonia,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Niue,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Norfolk Island,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Palau Island,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Palestine,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Pitcairn Island,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Puerto Rico,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Republic of Montenegro,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Republic of Serbia,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Reunion,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: St Barthelemy,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: St Eustatius,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: St Helena,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: St Kitts-Nevis,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: St Lucia,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: St Maarten,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: St Pierre &amp; Miquelon,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: St Vincent &amp; Grenadines,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Saipan,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Samoa American,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Sao Tome &amp; Principe,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Swaziland,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Tahiti,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Taiwan,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Tokelau,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Trinidad &amp; Tobago,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Turks &amp; Caicos Is,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Vatican City State,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Virgin Islands (Brit),
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Virgin Islands (USA),
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Wake Island,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Wallis &amp; Futana Is,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Zaire,
+	Missing country: Antigua and Barbuda,
+	Missing country: Bosnia and Herzegovina,
+	Missing country: Cabo Verde,
+	Missing country: Congo (Congo-Brazzaville),
+	Missing country: Côte d&apos;Ivoire,
+	Missing country: Czechia (Czech Republic),
+	Missing country: Democratic Republic of the Congo,
+	Missing country: Eswatini (fmr. &quot;&quot;Swaziland&quot;&quot;),
+	Missing country: Guinea-Bissau,
+	Missing country: Holy See,
+	Missing country: Micronesia,
+	Missing country: Montenegro,
+	Missing country: Myanmar (formerly Burma),
+	Missing country: Namibia,
+	Missing country: Netherlands,
+	Missing country: North Korea,
+	Missing country: North Macedonia,
+	Missing country: Palau,
+	Missing country: Palestine State,
+	Missing country: Saint Kitts and Nevis,
+	Missing country: Saint Lucia,
+	Missing country: Saint Vincent and the Grenadines,
+	Missing country: Sao Tome and Principe,
+	Missing country: Serbia,
+	Missing country: South Korea,
+	Missing country: South Sudan,
+	Missing country: Timor-Leste,
+	Missing country: Trinidad and Tobago
+	at tests.DatacomBugsFormTestCountry.testCountryDropdownOptions(DatacomBugsFormTestCountry.java:67)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1463952462", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1463952462'><pre>java.lang.AssertionError: The following asserts failed:
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: American Samoa,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Anguilla,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Antigua &amp; Barbuda,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Aruba,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Bermuda,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Bonaire,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Bosnia &amp; Herzegovina,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: British Indian Ocean Ter,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Canary Islands,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Cape Verde,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Cayman Islands,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Channel Islands,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Christmas Island,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Cocos Island,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Congo,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Cook Islands,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Cote DIvoire,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Curacao,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Czech Republic,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: East Timor,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Falkland Islands,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Faroe Islands,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: French Guiana,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: French Polynesia,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: French Southern Ter,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Gibraltar,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Great Britain,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Greenland,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Guadeloupe,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Guam,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Hawaii,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Hong Kong,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Isle of Man,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Korea North,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Korea South,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Macau,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Macedonia,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Martinique,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Mayotte,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Midway Islands,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Montserrat,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Myanmar,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Nambia,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Netherland Antilles,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Netherlands (Holland, Europe),
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Nevis,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: New Caledonia,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Niue,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Norfolk Island,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Palau Island,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Palestine,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Pitcairn Island,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Puerto Rico,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Republic of Montenegro,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Republic of Serbia,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Reunion,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: St Barthelemy,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: St Eustatius,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: St Helena,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: St Kitts-Nevis,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: St Lucia,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: St Maarten,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: St Pierre &amp; Miquelon,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: St Vincent &amp; Grenadines,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Saipan,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Samoa American,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Sao Tome &amp; Principe,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Swaziland,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Tahiti,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Taiwan,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Tokelau,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Trinidad &amp; Tobago,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Turks &amp; Caicos Is,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Vatican City State,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Virgin Islands (Brit),
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Virgin Islands (USA),
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Wake Island,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Wallis &amp; Futana Is,
+	&lt;span style=&apos;color:red;&apos;&gt; Invalid country: Zaire,
+	Missing country: Antigua and Barbuda,
+	Missing country: Bosnia and Herzegovina,
+	Missing country: Cabo Verde,
+	Missing country: Congo (Congo-Brazzaville),
+	Missing country: Côte d&apos;Ivoire,
+	Missing country: Czechia (Czech Republic),
+	Missing country: Democratic Republic of the Congo,
+	Missing country: Eswatini (fmr. &quot;&quot;Swaziland&quot;&quot;),
+	Missing country: Guinea-Bissau,
+	Missing country: Holy See,
+	Missing country: Micronesia,
+	Missing country: Montenegro,
+	Missing country: Myanmar (formerly Burma),
+	Missing country: Namibia,
+	Missing country: Netherlands,
+	Missing country: North Korea,
+	Missing country: North Macedonia,
+	Missing country: Palau,
+	Missing country: Palestine State,
+	Missing country: Saint Kitts and Nevis,
+	Missing country: Saint Lucia,
+	Missing country: Saint Vincent and the Grenadines,
+	Missing country: Sao Tome and Principe,
+	Missing country: Serbia,
+	Missing country: South Korea,
+	Missing country: South Sudan,
+	Missing country: Timor-Leste,
+	Missing country: Trinidad and Tobago
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.DatacomBugsFormTestCountry.testCountryDropdownOptions(DatacomBugsFormTestCountry.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>3</td>
+<td>tests.DatacomBugsFormTestCountry@a8ef162</td></tr>
+<tr>
+<td title='tests.DatacomBugsFormTestEmail.testValidInputEmail()'><b>testValidInputEmail</b><br>Test class: tests.DatacomBugsFormTestEmail<br>Parameters: com.datacom.framework.models.UserData@713883b6</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Monkey] but found [Monke],
+	expected [1234567890] but found [1234567891]
+	at tests.DatacomBugsFormTestEmail.runEmailTest(DatacomBugsFormTestEmail.java:66)
+	at tests.DatacomBugsFormTestEmail.testValidInputEmail(DatacomBugsFormTestEmail.java:33)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace934466114", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace934466114'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Monkey] but found [Monke],
+	expected [1234567890] but found [1234567891]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.DatacomBugsFormTestEmail.runEmailTest(DatacomBugsFormTestEmail.java:66)
+	at tests.DatacomBugsFormTestEmail.testValidInputEmail(DatacomBugsFormTestEmail.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>3</td>
+<td>tests.DatacomBugsFormTestEmail@1f760b47</td></tr>
+<tr>
+<td title='tests.DatacomBugsFormTestName.testValidInputLastName()'><b>testValidInputLastName</b><br>Test class: tests.DatacomBugsFormTestName<br>Parameters: com.datacom.framework.models.UserData@120fce07</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Monkey] but found [Monke],
+	expected [1234567890] but found [1234567891]
+	at tests.DatacomBugsFormTestName.runLastNameTest(DatacomBugsFormTestName.java:106)
+	at tests.DatacomBugsFormTestName.testValidInputLastName(DatacomBugsFormTestName.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1937585167", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1937585167'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Monkey] but found [Monke],
+	expected [1234567890] but found [1234567891]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.DatacomBugsFormTestName.runLastNameTest(DatacomBugsFormTestName.java:106)
+	at tests.DatacomBugsFormTestName.testValidInputLastName(DatacomBugsFormTestName.java:49)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>1</td>
+<td>tests.DatacomBugsFormTestName@18ece7f4</td></tr>
+<tr>
+<td title='tests.DatacomBugsFormTestPhoneNumber.testInvalidInputPhone()'><b>testInvalidInputPhone</b><br>Test class: tests.DatacomBugsFormTestPhoneNumber<br>Parameters: com.datacom.framework.models.UserData@54e7d2fb</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Expected actual to contain: Unsuccessful - Phone Number field should only accept numeric values  but was: Successfully registered the following information expected [true] but found [false],
+	expected [Monkey] but found [Monke],
+	expected [QWERTY!@#$%] but found [QWERTY!@#$NaN]
+	at tests.DatacomBugsFormTestPhoneNumber.runPhoneTest(DatacomBugsFormTestPhoneNumber.java:70)
+	at tests.DatacomBugsFormTestPhoneNumber.testInvalidInputPhone(DatacomBugsFormTestPhoneNumber.java:38)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace163847472", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace163847472'><pre>java.lang.AssertionError: The following asserts failed:
+	Expected actual to contain: Unsuccessful - Phone Number field should only accept numeric values  but was: Successfully registered the following information expected [true] but found [false],
+	expected [Monkey] but found [Monke],
+	expected [QWERTY!@#$%] but found [QWERTY!@#$NaN]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.DatacomBugsFormTestPhoneNumber.runPhoneTest(DatacomBugsFormTestPhoneNumber.java:70)
+	at tests.DatacomBugsFormTestPhoneNumber.testInvalidInputPhone(DatacomBugsFormTestPhoneNumber.java:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>3</td>
+<td>tests.DatacomBugsFormTestPhoneNumber@1cf56a1c</td></tr>
+<tr>
+<td title='tests.DatacomBugsFormTestPassword.testValidInputPassword()'><b>testValidInputPassword</b><br>Test class: tests.DatacomBugsFormTestPassword<br>Parameters: com.datacom.framework.models.UserData@6934ed95</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Monkey] but found [Monke],
+	expected [1234567890] but found [1234567891]
+	at tests.DatacomBugsFormTestPassword.runPasswordTest(DatacomBugsFormTestPassword.java:70)
+	at tests.DatacomBugsFormTestPassword.testValidInputPassword(DatacomBugsFormTestPassword.java:33)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1679871829", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1679871829'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Monkey] but found [Monke],
+	expected [1234567890] but found [1234567891]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.DatacomBugsFormTestPassword.runPasswordTest(DatacomBugsFormTestPassword.java:70)
+	at tests.DatacomBugsFormTestPassword.testValidInputPassword(DatacomBugsFormTestPassword.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>2</td>
+<td>tests.DatacomBugsFormTestPassword@3cce57c7</td></tr>
+<tr>
+<td title='tests.DatacomBugsFormTestName.testInvalidInputFirstName()'><b>testInvalidInputFirstName</b><br>Test class: tests.DatacomBugsFormTestName<br>Parameters: com.datacom.framework.models.UserData@5f944328</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Monkey] but found [Monke],
+	expected [1234567890] but found [1234567891]
+	at tests.DatacomBugsFormTestName.runFirstNameTest(DatacomBugsFormTestName.java:83)
+	at tests.DatacomBugsFormTestName.testInvalidInputFirstName(DatacomBugsFormTestName.java:39)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace399709995", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace399709995'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Monkey] but found [Monke],
+	expected [1234567890] but found [1234567891]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.DatacomBugsFormTestName.runFirstNameTest(DatacomBugsFormTestName.java:83)
+	at tests.DatacomBugsFormTestName.testInvalidInputFirstName(DatacomBugsFormTestName.java:39)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>2</td>
+<td>tests.DatacomBugsFormTestName@18ece7f4</td></tr>
+<tr>
+<td title='tests.DatacomBugsFormTestPhoneNumber.testValidInputPhone()'><b>testValidInputPhone</b><br>Test class: tests.DatacomBugsFormTestPhoneNumber<br>Parameters: com.datacom.framework.models.UserData@4a676dec</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Monkey] but found [Monke],
+	expected [1234567890] but found [1234567891]
+	at tests.DatacomBugsFormTestPhoneNumber.runPhoneTest(DatacomBugsFormTestPhoneNumber.java:70)
+	at tests.DatacomBugsFormTestPhoneNumber.testValidInputPhone(DatacomBugsFormTestPhoneNumber.java:33)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1748665409", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1748665409'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Monkey] but found [Monke],
+	expected [1234567890] but found [1234567891]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.DatacomBugsFormTestPhoneNumber.runPhoneTest(DatacomBugsFormTestPhoneNumber.java:70)
+	at tests.DatacomBugsFormTestPhoneNumber.testValidInputPhone(DatacomBugsFormTestPhoneNumber.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>2</td>
+<td>tests.DatacomBugsFormTestPhoneNumber@1cf56a1c</td></tr>
+<tr>
+<td title='tests.DatacomBugsFormTestName.testInvalidInputLastName()'><b>testInvalidInputLastName</b><br>Test class: tests.DatacomBugsFormTestName<br>Parameters: com.datacom.framework.models.UserData@4fe9ff1f</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Expected actual to contain: Unsuccessful but was: Successfully registered the following information expected [true] but found [false],
+	expected [!@#123] but found [!@#12],
+	expected [1234567890] but found [1234567891]
+	at tests.DatacomBugsFormTestName.runLastNameTest(DatacomBugsFormTestName.java:106)
+	at tests.DatacomBugsFormTestName.testInvalidInputLastName(DatacomBugsFormTestName.java:54)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1633245381", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1633245381'><pre>java.lang.AssertionError: The following asserts failed:
+	Expected actual to contain: Unsuccessful but was: Successfully registered the following information expected [true] but found [false],
+	expected [!@#123] but found [!@#12],
+	expected [1234567890] but found [1234567891]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.DatacomBugsFormTestName.runLastNameTest(DatacomBugsFormTestName.java:106)
+	at tests.DatacomBugsFormTestName.testInvalidInputLastName(DatacomBugsFormTestName.java:54)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>2</td>
+<td>tests.DatacomBugsFormTestName@18ece7f4</td></tr>
+<tr>
+<td title='tests.DatacomBugsFormTestPhoneNumber.testEmptyInputPhone()'><b>testEmptyInputPhone</b><br>Test class: tests.DatacomBugsFormTestPhoneNumber<br>Parameters: com.datacom.framework.models.UserData@1452d717</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Monkey] but found [],
+	expected [luffy@op.com] but found []
+	at tests.DatacomBugsFormTestPhoneNumber.runPhoneTest(DatacomBugsFormTestPhoneNumber.java:70)
+	at tests.DatacomBugsFormTestPhoneNumber.testEmptyInputPhone(DatacomBugsFormTestPhoneNumber.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1221233207", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1221233207'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Monkey] but found [],
+	expected [luffy@op.com] but found []
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.DatacomBugsFormTestPhoneNumber.runPhoneTest(DatacomBugsFormTestPhoneNumber.java:70)
+	at tests.DatacomBugsFormTestPhoneNumber.testEmptyInputPhone(DatacomBugsFormTestPhoneNumber.java:48)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>3</td>
+<td>tests.DatacomBugsFormTestPhoneNumber@1cf56a1c</td></tr>
+<tr>
+<td title='tests.DatacomBugsFormTestName.testValidInputFirstName()'><b>testValidInputFirstName</b><br>Test class: tests.DatacomBugsFormTestName<br>Parameters: com.datacom.framework.models.UserData@b7d3a2a</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Monkey] but found [Monke],
+	expected [1234567890] but found [1234567891]
+	at tests.DatacomBugsFormTestName.runFirstNameTest(DatacomBugsFormTestName.java:83)
+	at tests.DatacomBugsFormTestName.testValidInputFirstName(DatacomBugsFormTestName.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace962809437", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace962809437'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Monkey] but found [Monke],
+	expected [1234567890] but found [1234567891]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.DatacomBugsFormTestName.runFirstNameTest(DatacomBugsFormTestName.java:83)
+	at tests.DatacomBugsFormTestName.testValidInputFirstName(DatacomBugsFormTestName.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>1</td>
+<td>tests.DatacomBugsFormTestName@18ece7f4</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.DatacomBugsFormTestPassword.testLessMinimumInputPassword()'><b>testLessMinimumInputPassword</b><br>Test class: tests.DatacomBugsFormTestPassword<br>Parameters: com.datacom.framework.models.UserData@42bb7254</td>
+<td></td>
+<td>3</td>
+<td>tests.DatacomBugsFormTestPassword@3cce57c7</td></tr>
+<tr>
+<td title='tests.DatacomBugsFormTestPassword.testMoreThanMaxInputPassword()'><b>testMoreThanMaxInputPassword</b><br>Test class: tests.DatacomBugsFormTestPassword<br>Parameters: com.datacom.framework.models.UserData@5dd05269</td>
+<td></td>
+<td>4</td>
+<td>tests.DatacomBugsFormTestPassword@3cce57c7</td></tr>
+<tr>
+<td title='tests.DatacomBugsFormTestPassword.testEmptyInputPassword()'><b>testEmptyInputPassword</b><br>Test class: tests.DatacomBugsFormTestPassword<br>Parameters: com.datacom.framework.models.UserData@e5aee39</td>
+<td></td>
+<td>4</td>
+<td>tests.DatacomBugsFormTestPassword@3cce57c7</td></tr>
+</table><p>
+</body>
+</html>
